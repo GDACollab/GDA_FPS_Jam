@@ -25,7 +25,7 @@ public class SunflowerGunAnimationEvents : MonoBehaviour
     [Space(15)]
     public AudioClip ReloadBoltFirst;
     public AudioClip ReloadBoltSecond;
-
+    public AudioClip ReloadEndRustle; // for when the player holds the gun normally again
 
     public void PlayFireMainSound()
     {
@@ -82,5 +82,9 @@ public class SunflowerGunAnimationEvents : MonoBehaviour
     public void PlayReloadBoltSecondSound()
     {
         animator.PlayAudio(ReloadBoltSecond);
+    }
+    public void PlayReloadEndRustleSound()
+    {
+        animator.PlayAudio(ReloadEndRustle);
     }
 }
