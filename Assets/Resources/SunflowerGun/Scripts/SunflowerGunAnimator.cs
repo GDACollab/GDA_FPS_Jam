@@ -14,12 +14,6 @@ public class SunflowerGunAnimator : MonoBehaviour
     [Header("Animation References")]
 
 
-    [Space(15)]
-    public ParticleSystem steamBarrel;
-    public ParticleSystem steamReloadEjection;
-    public ParticleSystem muzzleFlash;
-
-
     [Header("Misc. References")]
     public AudioSource audioSource;
 

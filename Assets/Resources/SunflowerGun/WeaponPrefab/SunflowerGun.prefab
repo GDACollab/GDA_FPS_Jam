@@ -352,9 +352,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccc3c453b30769b4cb5cdc2a82c6b4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  steamBarrel: {fileID: 4985926415169352980}
-  steamReloadEjection: {fileID: 2842228927076121286}
-  muzzleFlash: {fileID: 8933625282433093970}
   audioSource: {fileID: 6177954815053331878}
 --- !u!114 &9078215315120841022
 MonoBehaviour:
@@ -369,6 +366,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1606309026249923286}
+  BarrelSteam: {fileID: 4985926415169352980}
+  ReloadEjectionSteam: {fileID: 2842228927076121286}
+  MuzzleFlash: {fileID: 8933625282433093970}
   FireMain: {fileID: 8300000, guid: 062ac5b3ce2e570408690a16bd898524, type: 3}
   FireSteam: {fileID: 8300000, guid: 2d36042d39544614985e782855b46852, type: 3}
   ReloadOpen: {fileID: 8300000, guid: f7842ade7adfcff43b72a7655c7e8da4, type: 3}

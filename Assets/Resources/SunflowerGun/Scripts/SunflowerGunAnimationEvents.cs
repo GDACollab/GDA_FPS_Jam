@@ -8,6 +8,12 @@ public class SunflowerGunAnimationEvents : MonoBehaviour
     public SunflowerGunAnimator animator;
 
 
+    [Header("Particle Emitter References")]
+    public ParticleSystem BarrelSteam;
+    public ParticleSystem ReloadEjectionSteam;
+    public ParticleSystem MuzzleFlash;
+
+
     [Header("Audio References")]
     public AudioClip FireMain;
     public AudioClip FireSteam;
@@ -27,6 +33,27 @@ public class SunflowerGunAnimationEvents : MonoBehaviour
     public AudioClip ReloadBoltSecond;
     public AudioClip ReloadEndRustle; // for when the player holds the gun normally again
 
+
+#region Particle Emitter Functions
+    public void PlayBarrelSteamEmitter()
+    {
+        animator.PlayParticleEmitter(BarrelSteam);
+        PlayFireSteamSound();
+    }
+
+    public void PlayReloadEjectionSteamEmitter()
+    {
+        animator.PlayParticleEmitter(ReloadEjectionSteam);
+    }
+
+    public void PlayMuzzleFlashEmitter()
+    {
+        animator.PlayParticleEmitter(MuzzleFlash);
+    }
+#endregion
+
+
+#region Sound Functions
     public void PlayFireMainSound()
     {
         animator.PlayAudio(FireMain);
@@ -87,4 +114,5 @@ public class SunflowerGunAnimationEvents : MonoBehaviour
     {
         animator.PlayAudio(ReloadEndRustle);
     }
+#endregion
 }
