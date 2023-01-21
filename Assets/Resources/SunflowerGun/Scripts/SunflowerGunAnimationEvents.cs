@@ -16,6 +16,7 @@ public class SunflowerGunAnimationEvents : MonoBehaviour
     public AudioClip ReloadOpenEjectMag;
     public AudioClip ReloadOpenCaseHitGround;
     [Space(15)]
+    public AudioClip ReloadGrabMag; // grabbing the mag from player's body
     public AudioClip ReloadInsertMag;
     public AudioClip ReloadInsertProjectile;
     [Space(15)]
@@ -50,6 +51,10 @@ public class SunflowerGunAnimationEvents : MonoBehaviour
     }
 
 
+    public void PlayReloadGrabMagSound()
+    {
+        animator.PlayAudio(ReloadGrabMag);
+    }
     public void PlayReloadInsertMagSound()
     {
         animator.PlayAudio(ReloadInsertMag);

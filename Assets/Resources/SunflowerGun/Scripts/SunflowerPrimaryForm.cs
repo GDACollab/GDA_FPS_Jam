@@ -12,8 +12,6 @@ public class SunflowerPrimaryForm : BaseForm
 
     public override void FormAction(float context)
     {
-        base.FormAction(context);
-
         //Spawn bullet prefab at weapon's barrel position
         GameObject bullet = Instantiate(projectile, FormController.Instance.currentForm.barrelSpawn.position, Quaternion.identity);
         SpawnedGarbageController.Instance.AddAsChild(bullet);

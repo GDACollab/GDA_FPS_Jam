@@ -9,13 +9,15 @@ public class SunflowerChargeController : MonoBehaviour
     // -Enrico
 
     public FormObject formObject;
-    public Animator animator;
+    public SunflowerGunAnimator animator;
+    public SunflowerGunAnimationEvents events;
     public AudioSource chargingUpSoundSource;
 
 
     private void Update()
     {
-        if (!FormController.Instance._isReloading &&
+         if (!FormController.Instance._isReloading &&
+            formObject._currentPrimaryEnergy != 0 &&
             FormController.Instance._currentPrimaryIsPressed &&
             formObject._currentPrimaryCooldown <= 0)
         {
