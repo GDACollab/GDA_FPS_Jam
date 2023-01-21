@@ -375,12 +375,12 @@ MonoBehaviour:
   ReloadOpenEjectMag: {fileID: 8300000, guid: 5fd96818f9167c24d8cb9eb300c90b14, type: 3}
   ReloadOpenCaseHitGround: {fileID: 8300000, guid: d2f8b5c13420cc84591ec76a9d5bc149,
     type: 3}
-  ReloadGrabMag: {fileID: 0}
+  ReloadGrabMag: {fileID: 8300000, guid: cebe1e28981145e4993d1014409c308c, type: 3}
   ReloadInsertMag: {fileID: 8300000, guid: 3742bd2da07848448a3f74129382331b, type: 3}
   ReloadInsertProjectile: {fileID: 8300000, guid: 59fbc9c4b6653c14eb45a7bf39a3abe3,
     type: 3}
   ReloadLockMechanism: {fileID: 8300000, guid: 3f3d430d06747304594b5bf703b6c814, type: 3}
-  ReloadLockRustle: {fileID: 0}
+  ReloadLockRustle: {fileID: 8300000, guid: 6bc897dc0dea2b44180bdbce646d19ae, type: 3}
   ReloadBoltFirst: {fileID: 8300000, guid: 05b10425778dbc9438bc01790775c7d2, type: 3}
   ReloadBoltSecond: {fileID: 8300000, guid: f2f450177c387b540ac6012f70330fbe, type: 3}
 --- !u!114 &-4166555581262234945

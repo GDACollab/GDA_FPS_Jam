@@ -16,7 +16,14 @@ public class SunflowerChargeController : MonoBehaviour
 
     private void Update()
     {
-         if (!FormController.Instance._isReloading &&
+        // THIS IS JUST TESTING FEEL FREE TO GET RID OF THIS BLOCK
+        if (FormController.Instance.FiredGun)
+        {
+            events.PlayFireMainSound();
+            return;
+        }
+
+        if (!FormController.Instance._isReloading &&
             formObject._currentPrimaryEnergy != 0 &&
             FormController.Instance._currentPrimaryIsPressed &&
             formObject._currentPrimaryCooldown <= 0)
@@ -32,9 +39,15 @@ public class SunflowerChargeController : MonoBehaviour
         }
         else
         {
+            
             if (chargingUpSoundSource.isPlaying)
             {
-                chargingUpSoundSource.Stop();
+                // Need to let the charging sound ring out after firing otherwise it'll sound jarring
+                if (formObject._currentPrimaryCooldown <= 0)
+                {
+                    chargingUpSoundSource.Stop();
+                }
+
                 // And go back to Idle animation here
             }
         }
