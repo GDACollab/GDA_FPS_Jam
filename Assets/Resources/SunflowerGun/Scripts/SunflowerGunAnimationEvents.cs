@@ -20,6 +20,7 @@ public class SunflowerGunAnimationEvents : MonoBehaviour
     public AudioClip ReloadInsertProjectile;
     [Space(15)]
     public AudioClip ReloadLockMechanism;
+    public AudioClip ReloadLockRustle; // for when the player moves their hand to cock the bolt
     [Space(15)]
     public AudioClip ReloadBoltFirst;
     public AudioClip ReloadBoltSecond;
@@ -41,7 +42,7 @@ public class SunflowerGunAnimationEvents : MonoBehaviour
     }
     public void PlayReloadOpenEjectMagSound()
     {
-        animator.PlayAudio(ReloadOpenEjectMag);
+        animator.PlayAudio(ReloadOpenEjectMag); // this needs to be played at a much lower volume than normal
     }
     public void PlayReloadOpenCaseHitGroundSound()
     {
@@ -62,6 +63,10 @@ public class SunflowerGunAnimationEvents : MonoBehaviour
     public void PlayReloadLockMechanismSound()
     {
         animator.PlayAudio(ReloadLockMechanism);
+    }
+    public void PlayReloadLockRustleSound()
+    {
+        animator.PlayAudio(ReloadLockRustle);
     }
 
 
