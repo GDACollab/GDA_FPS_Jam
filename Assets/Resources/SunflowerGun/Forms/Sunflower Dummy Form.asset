@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27bb160d3bf4e5e46b38300f5c1ffb00, type: 3}
   m_Name: Sunflower Dummy Form
   m_EditorClassIdentifier: 
-  id: 
-  description: 
+  id: Sunflower Dummy Form
+  description: does nothing lmao
   icon: {fileID: 0}
   pivot: {fileID: 0}
-  firingType: 0
+  firingType: 1
   actionCooldown: 0
   maxHoldDuration: 0
   minHoldDuration: 0

@@ -18,7 +18,7 @@ MonoBehaviour:
   icon: {fileID: 0}
   pivot: {fileID: 0}
   firingType: 2
-  actionCooldown: 0.1
+  actionCooldown: 1
   maxHoldDuration: 1
   minHoldDuration: 1
   energyType: 1
