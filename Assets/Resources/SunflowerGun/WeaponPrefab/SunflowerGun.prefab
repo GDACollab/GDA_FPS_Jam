@@ -265,6 +265,7 @@ GameObject:
   - component: {fileID: 5031373402504124222}
   - component: {fileID: 8772137086625311784}
   - component: {fileID: 7224315161140563131}
+  - component: {fileID: 3964222987973506423}
   - component: {fileID: -4166555581262234945}
   m_Layer: 8
   m_Name: SunflowerGun
@@ -335,7 +336,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   formObject: {fileID: 8772137086625311784}
-  animator: {fileID: 51115260309149527}
+  animator: {fileID: 0}
+--- !u!114 &3964222987973506423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5031373402504124223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccc3c453b30769b4cb5cdc2a82c6b4fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 4957339771174626991}
+  chargingUpSoundSource: {fileID: 5828483038541233397}
+  miscAudioSource: {fileID: 6177954815053331878}
 --- !u!114 &-4166555581262234945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1394,20 +1410,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &51115260309149527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2104287386103417779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccc3c453b30769b4cb5cdc2a82c6b4fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chargingUpSoundSource: {fileID: 5828483038541233397}
-  miscAudioSource: {fileID: 6177954815053331878}
 --- !u!114 &7633819181942045784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1420,7 +1422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38c1813f8001cca43bc7eb5a442bc4ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 3964222987973506423}
   BarrelSteam: {fileID: 4985926415169352980}
   ReloadEjectionSteam: {fileID: 2842228927076121286}
   MuzzleFlash: {fileID: 8933625282433093970}
