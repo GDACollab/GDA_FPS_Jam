@@ -18,6 +18,9 @@ public class SunflowerGunAnimationEvents : MonoBehaviour
     public AudioClip DrawRustle;
     public AudioClip DrawEnd; // for settling into idle hold (i.e left hand settles on gun grip)
     [Space(15)]
+    public AudioClip ADS_On;
+    public AudioClip ADS_Off;
+    [Space(15)]
     public AudioClip FireMain;
     public AudioClip FireSteam;
     [Space(15)]
@@ -64,6 +67,16 @@ public class SunflowerGunAnimationEvents : MonoBehaviour
     public void PlayDrawEndSound()
     {
         animator.PlayAudio(DrawEnd);
+    }
+
+
+    public void PlayADSOnSound()
+    {
+        animator.PlayAudio(ADS_On);
+    }
+    public void PlayADSOffSound()
+    {
+        animator.PlayAudio(ADS_Off);
     }
 
 

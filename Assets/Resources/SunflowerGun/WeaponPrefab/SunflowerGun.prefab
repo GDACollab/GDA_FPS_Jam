@@ -336,7 +336,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   formObject: {fileID: 8772137086625311784}
   animator: {fileID: 51115260309149527}
-  chargingUpSoundSource: {fileID: 5828483038541233397}
 --- !u!114 &-4166555581262234945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1422,6 +1421,8 @@ MonoBehaviour:
   MuzzleFlash: {fileID: 8933625282433093970}
   DrawRustle: {fileID: 8300000, guid: b3afa5be7abeedd49b16d3a50f62346d, type: 3}
   DrawEnd: {fileID: 8300000, guid: ca47f76acf0fcd746a3286918e8e0394, type: 3}
+  ADS_On: {fileID: 8300000, guid: 42de44cc162f63148a18f53817d2907a, type: 3}
+  ADS_Off: {fileID: 8300000, guid: 6e492a07d8994df4b9bf71ef01d2d132, type: 3}
   FireMain: {fileID: 8300000, guid: 062ac5b3ce2e570408690a16bd898524, type: 3}
   FireSteam: {fileID: 8300000, guid: 2d36042d39544614985e782855b46852, type: 3}
   ReloadOpen: {fileID: 8300000, guid: f7842ade7adfcff43b72a7655c7e8da4, type: 3}
