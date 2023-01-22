@@ -14,7 +14,6 @@ namespace Sunflower
 
         public override void Update()
         {
-            // If we are reloading
             if ( FormController.Instance._isReloading )
             {
                 controller.CurrentState = controller.reloadingState;

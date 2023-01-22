@@ -69,11 +69,17 @@ public class SunflowerGunAnimator : MonoBehaviour
     }
 #endregion
 
+public void Draw()
+{
+    animator.SetTrigger("Draw");
+}
+
 #region Charge Functions
     public void BeginCharge()
     {
         isCharging = true;
 
+        animator.SetFloat("ChargeValue", 0f );
         animator.SetTrigger("BeginCharge");
 
         chargingUpSoundSource.Play();
@@ -111,11 +117,6 @@ public class SunflowerGunAnimator : MonoBehaviour
     public void Reload()
     {
         animator.SetTrigger("Reload");
-    }
-
-    public void ReloadDone()
-    {
-        controller.reloadingState.AnimDone();
     }
 #endregion
 

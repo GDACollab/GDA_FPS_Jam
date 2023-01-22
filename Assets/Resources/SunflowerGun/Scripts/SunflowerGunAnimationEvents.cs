@@ -44,11 +44,6 @@ public class SunflowerGunAnimationEvents : MonoBehaviour
         animator.ShootingDone();
     }
 
-    public void ReloadDone()
-    {
-        animator.ReloadDone();
-    }
-
 #region Particle Emitter Functions
     public void PlayBarrelSteamEmitter()
     {
