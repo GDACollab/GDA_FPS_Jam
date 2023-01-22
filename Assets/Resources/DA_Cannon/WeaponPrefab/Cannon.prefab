@@ -403,7 +403,6 @@ GameObject:
   - component: {fileID: 5031373402504124222}
   - component: {fileID: 8772137086625311784}
   - component: {fileID: -4166555581262234945}
-  - component: {fileID: 1051818123852935119}
   m_Layer: 8
   m_Name: Cannon
   m_TagString: Untagged
@@ -509,26 +508,6 @@ MonoBehaviour:
     m_DissipationDistance: 100
     m_PropagationSpeed: 343
   m_DefaultVelocity: {x: 0, y: -1, z: 0}
---- !u!114 &1051818123852935119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5031373402504124223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8508f04a7c08582418a1bf7323672145, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  statsWhileActive:
-    maximumInputSpeed: 100
-    sprintModifier: 1.5
-    ADSModifier: 0.6
-    movementAcceleration: 50
-    movementDrag: 5
-    gravity: 35
-    jumpForce: 15
 --- !u!1 &6826687475788006843
 GameObject:
   m_ObjectHideFlags: 0
