@@ -15,6 +15,9 @@ public class SunflowerGunAnimationEvents : MonoBehaviour
 
 
     [Header("Audio References")]
+    public AudioClip DrawRustle;
+    public AudioClip DrawEnd; // for settling into idle hold (i.e left hand settles on gun grip)
+    [Space(15)]
     public AudioClip FireMain;
     public AudioClip FireSteam;
     [Space(15)]
@@ -31,7 +34,7 @@ public class SunflowerGunAnimationEvents : MonoBehaviour
     [Space(15)]
     public AudioClip ReloadBoltFirst;
     public AudioClip ReloadBoltSecond;
-    public AudioClip ReloadEndRustle; // for when the player holds the gun normally again
+    // NOTE: Use DrawEnd sound for when player holds gun again after reloading
 
 
 #region Particle Emitter Functions
@@ -54,6 +57,16 @@ public class SunflowerGunAnimationEvents : MonoBehaviour
 
 
 #region Sound Functions
+    public void PlayDrawRustleSound()
+    {
+        animator.PlayAudio(DrawRustle);
+    }
+    public void PlayDrawEndSound()
+    {
+        animator.PlayAudio(DrawEnd);
+    }
+
+
     public void PlayFireMainSound()
     {
         animator.PlayAudio(FireMain);
@@ -109,10 +122,6 @@ public class SunflowerGunAnimationEvents : MonoBehaviour
     public void PlayReloadBoltSecondSound()
     {
         animator.PlayAudio(ReloadBoltSecond);
-    }
-    public void PlayReloadEndRustleSound()
-    {
-        animator.PlayAudio(ReloadEndRustle);
     }
 #endregion
 }

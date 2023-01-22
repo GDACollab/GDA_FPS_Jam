@@ -16,13 +16,6 @@ public class SunflowerChargeController : MonoBehaviour
 
     private void Update()
     {
-        // THIS IS JUST TESTING FEEL FREE TO GET RID OF THIS BLOCK
-        if (FormController.Instance.FiredGun)
-        {
-            events.PlayFireMainSound();
-            return;
-        }
-
         if (!FormController.Instance._isReloading &&
             formObject._currentPrimaryEnergy != 0 &&
             FormController.Instance._currentPrimaryIsPressed &&

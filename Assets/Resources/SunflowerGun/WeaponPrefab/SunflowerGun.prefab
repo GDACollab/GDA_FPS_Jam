@@ -369,6 +369,8 @@ MonoBehaviour:
   BarrelSteam: {fileID: 4985926415169352980}
   ReloadEjectionSteam: {fileID: 2842228927076121286}
   MuzzleFlash: {fileID: 8933625282433093970}
+  DrawRustle: {fileID: 8300000, guid: b3afa5be7abeedd49b16d3a50f62346d, type: 3}
+  DrawEnd: {fileID: 8300000, guid: ca47f76acf0fcd746a3286918e8e0394, type: 3}
   FireMain: {fileID: 8300000, guid: 062ac5b3ce2e570408690a16bd898524, type: 3}
   FireSteam: {fileID: 8300000, guid: 2d36042d39544614985e782855b46852, type: 3}
   ReloadOpen: {fileID: 8300000, guid: f7842ade7adfcff43b72a7655c7e8da4, type: 3}
@@ -383,7 +385,6 @@ MonoBehaviour:
   ReloadLockRustle: {fileID: 8300000, guid: 6bc897dc0dea2b44180bdbce646d19ae, type: 3}
   ReloadBoltFirst: {fileID: 8300000, guid: 05b10425778dbc9438bc01790775c7d2, type: 3}
   ReloadBoltSecond: {fileID: 8300000, guid: f2f450177c387b540ac6012f70330fbe, type: 3}
-  ReloadEndRustle: {fileID: 8300000, guid: e296248cbfdf6914c8c6de67d8a94138, type: 3}
 --- !u!114 &-4166555581262234945
 MonoBehaviour:
   m_ObjectHideFlags: 0
