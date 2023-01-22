@@ -10,39 +10,43 @@ public class SunflowerChargeController : MonoBehaviour
 
     public FormObject formObject;
     public SunflowerGunAnimator animator;
-    public SunflowerGunAnimationEvents events;
-    public AudioSource chargingUpSoundSource;
 
+    private bool isCharging = false;
 
     private void Update()
     {
+        // If we are ready to shoot
         if (!FormController.Instance._isReloading &&
             formObject._currentPrimaryEnergy != 0 &&
-            FormController.Instance._currentPrimaryIsPressed &&
             formObject._currentPrimaryCooldown <= 0)
         {
-            if (!chargingUpSoundSource.isPlaying)
+            if( FormController.Instance._currentPrimaryIsPressed )
             {
-                chargingUpSoundSource.Play();
-                // Probably play Charge animation here
+                // We are in the same frame as when we clicked
+                if (!isCharging)
+                {
+                    animator.BeginCharge();
+                }
             }
-
-            // Formula for getting % of charge done
-            // FormController.Instance._currentPrimaryHoldDuration / formObject.primaryForm.maxHoldDuration
+            else
+            {
+                // We are in the same frame as when we release the button
+                if (isCharging)
+                {
+                    // TODO: Run checks on if we need to cancel charge animation or shoot
+                    
+                    // Need to let the charging sound ring out after firing otherwise it'll sound jarring
+                    if (formObject._currentPrimaryCooldown <= 0)
+                    {
+                        animator.Shoot();
+                    }
+                }
+            }
         }
         else
         {
             
-            if (chargingUpSoundSource.isPlaying)
-            {
-                // Need to let the charging sound ring out after firing otherwise it'll sound jarring
-                if (formObject._currentPrimaryCooldown <= 0)
-                {
-                    chargingUpSoundSource.Stop();
-                }
-
-                // And go back to Idle animation here
-            }
+            
         }
     }
 }

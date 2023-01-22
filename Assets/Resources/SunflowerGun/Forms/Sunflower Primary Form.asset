@@ -20,7 +20,7 @@ MonoBehaviour:
   firingType: 2
   actionCooldown: 0.1
   maxHoldDuration: 1
-  minHoldDuration: 0
+  minHoldDuration: 1
   energyType: 1
   energyRegenType: 3
   energyRegenCooldown: 2

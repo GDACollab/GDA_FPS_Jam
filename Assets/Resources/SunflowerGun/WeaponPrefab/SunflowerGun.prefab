@@ -265,8 +265,6 @@ GameObject:
   - component: {fileID: 5031373402504124222}
   - component: {fileID: 8772137086625311784}
   - component: {fileID: 7224315161140563131}
-  - component: {fileID: 1606309026249923286}
-  - component: {fileID: 9078215315120841022}
   - component: {fileID: -4166555581262234945}
   m_Layer: 8
   m_Name: SunflowerGun
@@ -337,54 +335,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   formObject: {fileID: 8772137086625311784}
-  animator: {fileID: 1606309026249923286}
-  events: {fileID: 9078215315120841022}
+  animator: {fileID: 51115260309149527}
   chargingUpSoundSource: {fileID: 5828483038541233397}
---- !u!114 &1606309026249923286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5031373402504124223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccc3c453b30769b4cb5cdc2a82c6b4fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSource: {fileID: 6177954815053331878}
---- !u!114 &9078215315120841022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5031373402504124223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38c1813f8001cca43bc7eb5a442bc4ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 1606309026249923286}
-  BarrelSteam: {fileID: 4985926415169352980}
-  ReloadEjectionSteam: {fileID: 2842228927076121286}
-  MuzzleFlash: {fileID: 8933625282433093970}
-  DrawRustle: {fileID: 8300000, guid: b3afa5be7abeedd49b16d3a50f62346d, type: 3}
-  DrawEnd: {fileID: 8300000, guid: ca47f76acf0fcd746a3286918e8e0394, type: 3}
-  FireMain: {fileID: 8300000, guid: 062ac5b3ce2e570408690a16bd898524, type: 3}
-  FireSteam: {fileID: 8300000, guid: 2d36042d39544614985e782855b46852, type: 3}
-  ReloadOpen: {fileID: 8300000, guid: f7842ade7adfcff43b72a7655c7e8da4, type: 3}
-  ReloadOpenEjectMag: {fileID: 8300000, guid: 5fd96818f9167c24d8cb9eb300c90b14, type: 3}
-  ReloadOpenCaseHitGround: {fileID: 8300000, guid: d2f8b5c13420cc84591ec76a9d5bc149,
-    type: 3}
-  ReloadGrabMag: {fileID: 8300000, guid: cebe1e28981145e4993d1014409c308c, type: 3}
-  ReloadInsertMag: {fileID: 8300000, guid: 3742bd2da07848448a3f74129382331b, type: 3}
-  ReloadInsertProjectile: {fileID: 8300000, guid: 59fbc9c4b6653c14eb45a7bf39a3abe3,
-    type: 3}
-  ReloadLockMechanism: {fileID: 8300000, guid: 3f3d430d06747304594b5bf703b6c814, type: 3}
-  ReloadLockRustle: {fileID: 8300000, guid: 6bc897dc0dea2b44180bdbce646d19ae, type: 3}
-  ReloadBoltFirst: {fileID: 8300000, guid: 05b10425778dbc9438bc01790775c7d2, type: 3}
-  ReloadBoltSecond: {fileID: 8300000, guid: f2f450177c387b540ac6012f70330fbe, type: 3}
 --- !u!114 &-4166555581262234945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1428,7 +1380,7 @@ Animator:
   m_GameObject: {fileID: 2104287386103417779}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 563759cbf6aca6045a884be749dd4a9b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1438,6 +1390,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &51115260309149527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104287386103417779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccc3c453b30769b4cb5cdc2a82c6b4fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chargingUpSoundSource: {fileID: 5828483038541233397}
+  miscAudioSource: {fileID: 6177954815053331878}
 --- !u!114 &7633819181942045784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1454,20 +1420,22 @@ MonoBehaviour:
   BarrelSteam: {fileID: 4985926415169352980}
   ReloadEjectionSteam: {fileID: 2842228927076121286}
   MuzzleFlash: {fileID: 8933625282433093970}
-  DrawRustle: {fileID: 0}
-  DrawEnd: {fileID: 0}
-  FireMain: {fileID: 0}
-  FireSteam: {fileID: 0}
-  ReloadOpen: {fileID: 0}
-  ReloadOpenEjectMag: {fileID: 0}
-  ReloadOpenCaseHitGround: {fileID: 0}
-  ReloadGrabMag: {fileID: 0}
-  ReloadInsertMag: {fileID: 0}
-  ReloadInsertProjectile: {fileID: 0}
-  ReloadLockMechanism: {fileID: 0}
-  ReloadLockRustle: {fileID: 0}
-  ReloadBoltFirst: {fileID: 0}
-  ReloadBoltSecond: {fileID: 0}
+  DrawRustle: {fileID: 8300000, guid: b3afa5be7abeedd49b16d3a50f62346d, type: 3}
+  DrawEnd: {fileID: 8300000, guid: ca47f76acf0fcd746a3286918e8e0394, type: 3}
+  FireMain: {fileID: 8300000, guid: 062ac5b3ce2e570408690a16bd898524, type: 3}
+  FireSteam: {fileID: 8300000, guid: 2d36042d39544614985e782855b46852, type: 3}
+  ReloadOpen: {fileID: 8300000, guid: f7842ade7adfcff43b72a7655c7e8da4, type: 3}
+  ReloadOpenEjectMag: {fileID: 8300000, guid: 5fd96818f9167c24d8cb9eb300c90b14, type: 3}
+  ReloadOpenCaseHitGround: {fileID: 8300000, guid: d2f8b5c13420cc84591ec76a9d5bc149,
+    type: 3}
+  ReloadGrabMag: {fileID: 8300000, guid: cebe1e28981145e4993d1014409c308c, type: 3}
+  ReloadInsertMag: {fileID: 8300000, guid: 3742bd2da07848448a3f74129382331b, type: 3}
+  ReloadInsertProjectile: {fileID: 8300000, guid: 59fbc9c4b6653c14eb45a7bf39a3abe3,
+    type: 3}
+  ReloadLockMechanism: {fileID: 8300000, guid: 3f3d430d06747304594b5bf703b6c814, type: 3}
+  ReloadLockRustle: {fileID: 8300000, guid: 6bc897dc0dea2b44180bdbce646d19ae, type: 3}
+  ReloadBoltFirst: {fileID: 8300000, guid: 05b10425778dbc9438bc01790775c7d2, type: 3}
+  ReloadBoltSecond: {fileID: 8300000, guid: f2f450177c387b540ac6012f70330fbe, type: 3}
 --- !u!4 &5801310142109159104 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4507853375827396574, guid: 9cafdd71cb7c4cf4c85200b353704a07,

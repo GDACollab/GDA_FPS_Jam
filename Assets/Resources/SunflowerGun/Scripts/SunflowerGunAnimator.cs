@@ -11,20 +11,100 @@ public class SunflowerGunAnimator : MonoBehaviour
     //       Also be sure to set up a transform at the end of the barrel
     //       for the bullet spawn
 
-    [Header("Animation References")]
+    private FormController currentPlayerStatus;
+    private Animator animController;
 
+    private bool isCharging = false;
+    private bool reloadingAnimationPlayed = false;
 
-    [Header("Misc. References")]
-    public AudioSource audioSource;
+    [Header("Audio References")]
+    public AudioSource chargingUpSoundSource;
+    public AudioSource miscAudioSource;
 
+    private void Start()
+    {
+        currentPlayerStatus = GameObject.Find("Player").GetComponent<FormController>();
+        animController = GetComponent<Animator>();
+    }
 
+    private void Update()
+    {
+        // Check animation states
+        // This is the only place where these animation parameters are altered
+        // Feel free to remove these and set the animation up how you want
+ 
+        animController.SetBool("Fire", isFiring() && !isReloading());
+
+        if (isReloading() && !reloadingAnimationPlayed)
+        {
+            animController.SetTrigger("Reload");
+            reloadingAnimationPlayed = true;
+        }
+
+        if (!isReloading())
+        {
+            reloadingAnimationPlayed = false;
+        }
+
+        if( isCharging )
+        {
+            animController.SetFloat("ChargeValue", currentPlayerStatus._currentPrimaryHoldDuration / currentPlayerStatus.currentForm.primaryForm.maxHoldDuration );
+        }
+    }
+
+#region Misc Functions
     public void PlayAudio(AudioClip toPlay, float volume = 1f)
     {
-        audioSource.PlayOneShot(toPlay, volume);
+        miscAudioSource.PlayOneShot(toPlay, volume);
     }
 
     public void PlayParticleEmitter(ParticleSystem toPlay)
     {
         toPlay.Play();
     }
+#endregion
+
+    public void BeginCharge()
+    {
+        isCharging = true;
+
+        animController.SetTrigger("BeginCharge");
+
+        chargingUpSoundSource.Play();
+    }
+
+    private void StopCharge()
+    {
+        isCharging = false;
+        chargingUpSoundSource.Stop();
+    }
+
+    public void CancelCharge()
+    {
+        StopCharge();
+
+        animController.SetTrigger("CancelCharge");
+    }
+
+    public void Shoot()
+    {
+        StopCharge();
+
+        animController.SetTrigger("Fire");
+    }
+
+#region Helper methods
+    // Helper Methods
+    // Note: currentPlayerStatus has access to more information
+    // To see check the script FormController.cs, attached to the Player gameObject
+    public bool isADS(){ return currentPlayerStatus.isADS; }
+
+    public bool isReloading() { return currentPlayerStatus._isReloading; }
+
+    public bool isFiring() { return currentPlayerStatus.FiredGun; }
+
+    public bool isHoldingDownPrimary() { return (currentPlayerStatus._currentPrimaryHoldDuration > 0); }
+
+    public bool isHoldingDownSecondary() { return (currentPlayerStatus._currentSecondaryHoldDuration > 0); }
+#endregion
 }
