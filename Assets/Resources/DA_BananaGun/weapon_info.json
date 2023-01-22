@@ -1,0 +1,6 @@
+{
+  "id": "DylanAthena BananaGun",
+  "weaponPrefabPath": "DA_BananaGun/WeaponPrefab/BananaGun",
+  "meshPath": "DA_BananaGun/Models/banana",
+  "displayName": "BananaGun"
+}
