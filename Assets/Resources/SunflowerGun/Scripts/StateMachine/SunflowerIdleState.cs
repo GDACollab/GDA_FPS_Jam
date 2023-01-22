@@ -2,7 +2,7 @@ namespace Sunflower
 {
     public class IdleState : BaseState
     {
-        public IdleState( SunflowerChargeController controller ) : base( controller )
+        public IdleState( SunflowerChargeController controller, string name ) : base( controller, name )
         {
 
         }

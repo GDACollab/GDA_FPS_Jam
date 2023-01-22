@@ -13,6 +13,7 @@ public class SunflowerGunAnimator : MonoBehaviour
 
     private FormController currentPlayerStatus;
     [SerializeField] private Animator animator;
+    private SunflowerChargeController controller;
 
     private bool isCharging = false;
     // private bool reloadingAnimationPlayed = false;
@@ -20,6 +21,11 @@ public class SunflowerGunAnimator : MonoBehaviour
     [Header("Audio References")]
     public AudioSource chargingUpSoundSource;
     public AudioSource miscAudioSource;
+
+    private void Awake()
+    {
+        controller = GetComponent<SunflowerChargeController>();
+    }
 
     private void Start()
     {
@@ -63,6 +69,7 @@ public class SunflowerGunAnimator : MonoBehaviour
     }
 #endregion
 
+#region Charge Functions
     public void BeginCharge()
     {
         isCharging = true;
@@ -84,7 +91,9 @@ public class SunflowerGunAnimator : MonoBehaviour
 
         animator.SetTrigger("CancelCharge");
     }
+#endregion
 
+#region Shooting Functions
     public void Shoot()
     {
         StopCharge();
@@ -92,10 +101,23 @@ public class SunflowerGunAnimator : MonoBehaviour
         animator.SetTrigger("Fire");
     }
 
+    public void ShootingDone()
+    {
+        controller.firingState.AnimDone();
+    }
+#endregion
+
+#region Reload Functions
     public void Reload()
     {
         animator.SetTrigger("Reload");
     }
+
+    public void ReloadDone()
+    {
+        controller.reloadingState.AnimDone();
+    }
+#endregion
 
 #region Helper methods
     // Helper Methods

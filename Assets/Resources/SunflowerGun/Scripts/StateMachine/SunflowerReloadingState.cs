@@ -2,7 +2,7 @@ namespace Sunflower
 {
     public class ReloadingState : BaseState
     {
-        public ReloadingState( SunflowerChargeController controller ) : base( controller )
+        public ReloadingState( SunflowerChargeController controller, string name ) : base( controller, name )
         {
 
         }
@@ -20,6 +20,11 @@ namespace Sunflower
         public override void Exit()
         {
             
+        }
+
+        public void AnimDone()
+        {
+            controller.CurrentState = controller.idleState;
         }
     }
 }

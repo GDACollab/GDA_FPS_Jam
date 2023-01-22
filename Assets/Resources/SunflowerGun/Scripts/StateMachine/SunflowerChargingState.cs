@@ -2,7 +2,7 @@ namespace Sunflower
 {
     public class ChargingState : BaseState
     {
-        public ChargingState( SunflowerChargeController controller ) : base( controller )
+        public ChargingState( SunflowerChargeController controller, string name ) : base( controller, name )
         {
 
         }
@@ -25,7 +25,7 @@ namespace Sunflower
 
         public override void Exit()
         {
-            
+            FormController.Instance._currentPrimaryHoldDuration = 0;
         }
     }
 }

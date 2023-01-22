@@ -22,6 +22,7 @@ public class SunflowerChargeController : MonoBehaviour
         }
         set
         {
+            Debug.Log($"Changing state to {value.name}");
             if( _currentState != null )
             {
                 _currentState.Exit();
@@ -47,10 +48,10 @@ public class SunflowerChargeController : MonoBehaviour
 
     private void SetupStateMachine()
     {
-        idleState = new IdleState( this );
-        chargingState = new ChargingState( this );
-        firingState = new FiringState( this );
-        reloadingState = new ReloadingState( this );
+        idleState = new IdleState( this, "Idle" );
+        chargingState = new ChargingState( this, "Charging" );
+        firingState = new FiringState( this, "Firing" );
+        reloadingState = new ReloadingState( this, "Reloading" );
 
         CurrentState = idleState;
     }
