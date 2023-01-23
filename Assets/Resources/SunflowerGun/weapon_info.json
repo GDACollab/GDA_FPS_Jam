@@ -1,6 +1,6 @@
 {
   "id": "SunflowerGun",
   "weaponPrefabPath": "SunflowerGun/WeaponPrefab/SunflowerGun",
-  "meshPath": "SunflowerGun/Models/SunflowerGun_1",
+  "meshPath": "SunflowerGun/WeaponPrefab/SunflowerGun_Model",
   "displayName": "Sunflower"
 }

@@ -1824,7 +1824,7 @@ CapsuleCollider:
   m_Height: 0.02
   m_Direction: 1
   m_Center: {x: 0, y: 0.02, z: 0}
---- !u!59 &6509376847410071949
+--- !u!59 &8224142632859970654
 HingeJoint:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1836,7 +1836,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: -0.05572304, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 3.3870207e-12, y: -0.00000010373033, z: -0.00003874302}
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
