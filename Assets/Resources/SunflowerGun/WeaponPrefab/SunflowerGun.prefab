@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1591959766538966105}
   - component: {fileID: 1591959766538966086}
   - component: {fileID: 1591959766538966087}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -481,7 +481,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5801310142109159104}
+  m_Father: {fileID: 1619112880286191881}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &776200708538368042
@@ -546,10 +546,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4704543826644494094, guid: 267f0d07ee54d5a4bbe29d0ce10192af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6194079966911566463, guid: 267f0d07ee54d5a4bbe29d0ce10192af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8617267806907436460, guid: 267f0d07ee54d5a4bbe29d0ce10192af,
         type: 3}
       propertyPath: m_Name
       value: Audio Sources
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617267806907436460, guid: 267f0d07ee54d5a4bbe29d0ce10192af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 267f0d07ee54d5a4bbe29d0ce10192af, type: 3}
@@ -637,6 +652,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Muzzle Flash Emitter
+      objectReference: {fileID: 0}
+    - target: {fileID: 6498982917403896760, guid: 9b7d19d8c9c69e64ea3c5ddb4a059fe0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b7d19d8c9c69e64ea3c5ddb4a059fe0, type: 3}
@@ -764,6 +784,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: -8523625480504138973, guid: 9cafdd71cb7c4cf4c85200b353704a07,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae30b01dc0fbb174e91b8b222e56a18a, type: 2}
+    - target: {fileID: -8523625480504138973, guid: 9cafdd71cb7c4cf4c85200b353704a07,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: a9d124b9a507fde40901381aa7a79ff7, type: 2}
+    - target: {fileID: -8523625480504138973, guid: 9cafdd71cb7c4cf4c85200b353704a07,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: ab369b9c4ad55054a87025daedad93c2, type: 2}
     - target: {fileID: -8453024448717704897, guid: 9cafdd71cb7c4cf4c85200b353704a07,
         type: 3}
       propertyPath: m_Layer
@@ -798,6 +833,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7722091970575375430, guid: 9cafdd71cb7c4cf4c85200b353704a07,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -7595037162418505777, guid: 9cafdd71cb7c4cf4c85200b353704a07,
         type: 3}
@@ -1179,6 +1219,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 1951646020164160870, guid: 9cafdd71cb7c4cf4c85200b353704a07,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2395229751666955799, guid: 9cafdd71cb7c4cf4c85200b353704a07,
         type: 3}
       propertyPath: m_Layer
@@ -1229,10 +1274,20 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 3342006471163836932, guid: 9cafdd71cb7c4cf4c85200b353704a07,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3736695944768606535, guid: 9cafdd71cb7c4cf4c85200b353704a07,
         type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3757103165376455018, guid: 9cafdd71cb7c4cf4c85200b353704a07,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3927664826634790631, guid: 9cafdd71cb7c4cf4c85200b353704a07,
         type: 3}
@@ -1255,6 +1310,16 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4577925732716476755, guid: 9cafdd71cb7c4cf4c85200b353704a07,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741376307182418260, guid: 9cafdd71cb7c4cf4c85200b353704a07,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5003772450411636536, guid: 9cafdd71cb7c4cf4c85200b353704a07,
         type: 3}
       propertyPath: m_Layer
       value: 8
@@ -1514,7 +1579,8 @@ MonoBehaviour:
   ReloadEjectionSteam: {fileID: 2842228927076121286}
   MuzzleFlash: {fileID: 8933625282433093970}
   DrawRustle: {fileID: 8300000, guid: b3afa5be7abeedd49b16d3a50f62346d, type: 3}
-  DrawEnd: {fileID: 8300000, guid: ca47f76acf0fcd746a3286918e8e0394, type: 3}
+  DrawBolt: {fileID: 0}
+  DrawSights: {fileID: 0}
   ADS_On: {fileID: 8300000, guid: 42de44cc162f63148a18f53817d2907a, type: 3}
   ADS_Off: {fileID: 8300000, guid: 6e492a07d8994df4b9bf71ef01d2d132, type: 3}
   FireMain: {fileID: 8300000, guid: 062ac5b3ce2e570408690a16bd898524, type: 3}
@@ -1531,6 +1597,7 @@ MonoBehaviour:
   ReloadLockRustle: {fileID: 8300000, guid: 6bc897dc0dea2b44180bdbce646d19ae, type: 3}
   ReloadBoltFirst: {fileID: 8300000, guid: 05b10425778dbc9438bc01790775c7d2, type: 3}
   ReloadBoltSecond: {fileID: 8300000, guid: f2f450177c387b540ac6012f70330fbe, type: 3}
+  ReloadEnd: {fileID: 0}
 --- !u!1 &4066206353769388431 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2998437246213222253, guid: 9cafdd71cb7c4cf4c85200b353704a07,
@@ -1565,7 +1632,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: -0.01388037, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 3.6992792e-14, y: -0.00000014528521, z: 0.00000007412963}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1623,7 +1690,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: -0.01602334, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -0.000000043711207, y: -0.00000020489097, z: 3.907985e-14}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1650,12 +1717,6 @@ HingeJoint:
 --- !u!4 &5590093061714592812 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6658158558788809422, guid: 9cafdd71cb7c4cf4c85200b353704a07,
-    type: 3}
-  m_PrefabInstance: {fileID: 1293245488242013922}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &5801310142109159104 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4507853375827396574, guid: 9cafdd71cb7c4cf4c85200b353704a07,
     type: 3}
   m_PrefabInstance: {fileID: 1293245488242013922}
   m_PrefabAsset: {fileID: 0}
@@ -1706,7 +1767,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: -0.05764818, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 3.6300576e-14, y: -0.00000011548401, z: 0.000000043002725}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1778,7 +1839,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: -0.05572304, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 3.3870207e-12, y: -0.00000010373033, z: -0.00003874302}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1940,6 +2001,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Steam Emitter - Reload Ejection
       objectReference: {fileID: 0}
+    - target: {fileID: 2323626971629056844, guid: 6ace31e60fc0ee947a0304b525521bc7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2458424413060582766, guid: 6ace31e60fc0ee947a0304b525521bc7,
         type: 3}
       propertyPath: m_RootOrder
@@ -2020,6 +2086,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Steam Emitter - Barrel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1271231089330404751, guid: 56a8e572f3562e64bbcc1e095f4e0b15,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3683357664104627894, guid: 56a8e572f3562e64bbcc1e095f4e0b15,
         type: 3}
