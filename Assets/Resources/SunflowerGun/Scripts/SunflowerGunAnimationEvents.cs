@@ -39,6 +39,10 @@ public class SunflowerGunAnimationEvents : MonoBehaviour
     public AudioClip ReloadBoltSecond;
     // NOTE: Use DrawEnd sound for when player holds gun again after reloading
 
+    public void ShootingDone()
+    {
+        animator.ShootingDone();
+    }
 
 #region Particle Emitter Functions
     public void PlayBarrelSteamEmitter()

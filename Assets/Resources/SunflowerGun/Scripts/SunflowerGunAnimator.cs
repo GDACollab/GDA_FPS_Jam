@@ -12,19 +12,24 @@ public class SunflowerGunAnimator : MonoBehaviour
     //       for the bullet spawn
 
     private FormController currentPlayerStatus;
-    private Animator animController;
+    [SerializeField] private Animator animator;
+    private SunflowerChargeController controller;
 
     private bool isCharging = false;
-    private bool reloadingAnimationPlayed = false;
+    // private bool reloadingAnimationPlayed = false;
 
     [Header("Audio References")]
     public AudioSource chargingUpSoundSource;
     public AudioSource miscAudioSource;
 
+    private void Awake()
+    {
+        controller = GetComponent<SunflowerChargeController>();
+    }
+
     private void Start()
     {
         currentPlayerStatus = GameObject.Find("Player").GetComponent<FormController>();
-        animController = GetComponent<Animator>();
     }
 
     private void Update()
@@ -33,22 +38,22 @@ public class SunflowerGunAnimator : MonoBehaviour
         // This is the only place where these animation parameters are altered
         // Feel free to remove these and set the animation up how you want
  
-        animController.SetBool("Fire", isFiring() && !isReloading());
+        // animController.SetBool("Fire", isFiring() && !isReloading());
 
-        if (isReloading() && !reloadingAnimationPlayed)
-        {
-            animController.SetTrigger("Reload");
-            reloadingAnimationPlayed = true;
-        }
+        // if (isReloading() && !reloadingAnimationPlayed)
+        // {
+        //     animController.SetTrigger("Reload");
+        //     reloadingAnimationPlayed = true;
+        // }
 
-        if (!isReloading())
-        {
-            reloadingAnimationPlayed = false;
-        }
+        // if (!isReloading())
+        // {
+        //     reloadingAnimationPlayed = false;
+        // }
 
         if( isCharging )
         {
-            animController.SetFloat("ChargeValue", currentPlayerStatus._currentPrimaryHoldDuration / currentPlayerStatus.currentForm.primaryForm.maxHoldDuration );
+            animator.SetFloat("ChargeValue", currentPlayerStatus._currentPrimaryHoldDuration / currentPlayerStatus.currentForm.primaryForm.maxHoldDuration );
         }
     }
 
@@ -64,11 +69,18 @@ public class SunflowerGunAnimator : MonoBehaviour
     }
 #endregion
 
+public void Draw()
+{
+    animator.SetTrigger("Draw");
+}
+
+#region Charge Functions
     public void BeginCharge()
     {
         isCharging = true;
 
-        animController.SetTrigger("BeginCharge");
+        animator.SetFloat("ChargeValue", 0f );
+        animator.SetTrigger("BeginCharge");
 
         chargingUpSoundSource.Play();
     }
@@ -83,15 +95,30 @@ public class SunflowerGunAnimator : MonoBehaviour
     {
         StopCharge();
 
-        animController.SetTrigger("CancelCharge");
+        animator.SetTrigger("CancelCharge");
     }
+#endregion
 
+#region Shooting Functions
     public void Shoot()
     {
         StopCharge();
 
-        animController.SetTrigger("Fire");
+        animator.SetTrigger("Fire");
     }
+
+    public void ShootingDone()
+    {
+        controller.firingState.AnimDone();
+    }
+#endregion
+
+#region Reload Functions
+    public void Reload()
+    {
+        animator.SetTrigger("Reload");
+    }
+#endregion
 
 #region Helper methods
     // Helper Methods
