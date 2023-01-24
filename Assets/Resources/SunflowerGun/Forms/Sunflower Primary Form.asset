@@ -23,7 +23,7 @@ MonoBehaviour:
   minHoldDuration: 1
   energyType: 1
   energyRegenType: 3
-  energyRegenCooldown: 3.5
+  energyRegenCooldown: 4.4
   energyRegenRate: 0
   energyMax: 5
   energyCost: 1
