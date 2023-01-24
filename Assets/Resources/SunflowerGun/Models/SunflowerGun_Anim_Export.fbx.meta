@@ -231,7 +231,7 @@ ModelImporter:
       takeName: SunflowerGunArmature|Reload
       internalID: 4828601963503048532
       firstFrame: 0
-      lastFrame: 141
+      lastFrame: 158
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -251,7 +251,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.23195876
+      - time: 0.18920784
         functionName: PlayReloadEjectionSteamEmitter
         data: 
         objectReferenceParameter: {instanceID: 0}
