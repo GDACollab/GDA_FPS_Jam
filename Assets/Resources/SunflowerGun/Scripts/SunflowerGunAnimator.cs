@@ -29,7 +29,7 @@ public class SunflowerGunAnimator : MonoBehaviour
 
     private void Start()
     {
-        currentPlayerStatus = GameObject.Find("Player").GetComponent<FormController>();
+        currentPlayerStatus = FormController.Instance;
     }
 
     private void Update()

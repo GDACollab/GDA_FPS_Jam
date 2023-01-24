@@ -119,21 +119,21 @@ ModelImporter:
         functionName: PlayDrawRustleSound
         data: 
         objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
+        floatParameter: 1
         intParameter: 0
         messageOptions: 0
-      - time: 0.47211903
+      - time: 0.46691748
         functionName: PlayDrawBoltSound
         data: 
         objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
+        floatParameter: 1
         intParameter: 0
         messageOptions: 0
-      - time: 0.6947476
+      - time: 0.7051507
         functionName: PlayDrawSightsSound
         data: 
         objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
+        floatParameter: 1
         intParameter: 0
         messageOptions: 0
       transformMask: []
@@ -198,17 +198,17 @@ ModelImporter:
         functionName: PlayFireMainSound
         data: 
         objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
+        floatParameter: 1
         intParameter: 0
         messageOptions: 0
-      - time: 0.0104031265
+      - time: 0.01040312
         functionName: PlayMuzzleFlashEmitter
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.32768145
+      - time: 0.36243472
         functionName: PlayBarrelSteamEmitter
         data: 
         objectReferenceParameter: {instanceID: 0}
@@ -251,11 +251,88 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.18920784
+      - time: 0
+        functionName: PlayShroudRotateSound
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 1
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.074392274
+        functionName: PlayReloadOpenSound
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 1
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.1456599
+        functionName: PlayReloadOpenEjectMagSound
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 1
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.19831057
         functionName: PlayReloadEjectionSteamEmitter
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.25133476
+        functionName: PlayReloadGrabMagSound
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.2930933
+        functionName: PlayReloadGrabMagSound
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0.75
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.38360047
+        functionName: PlayReloadInsertMagSound
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 1
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.5703862
+        functionName: PlayReloadLockMechanismSound
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 1
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.6468182
+        functionName: PlayReloadBoltFirstSound
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 1
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.71328676
+        functionName: PlayReloadBoltSecondSound
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 1
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.81764084
+        functionName: PlayShroudRotateShortSound
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0.4
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.8670302
+        functionName: PlayDrawSightsSound
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0.6
         intParameter: 0
         messageOptions: 0
       transformMask: []

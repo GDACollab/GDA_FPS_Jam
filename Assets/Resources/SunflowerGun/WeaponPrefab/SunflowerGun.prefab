@@ -1569,6 +1569,8 @@ MonoBehaviour:
   BarrelSteam: {fileID: 4985926415169352980}
   ReloadEjectionSteam: {fileID: 2842228927076121286}
   MuzzleFlash: {fileID: 8933625282433093970}
+  ShroudRotate: {fileID: 8300000, guid: b942b4f04f1d66c4789ecb3c958d0dae, type: 3}
+  ShroudRotateShort: {fileID: 8300000, guid: 51f20c235853c2b4b9b27a04776f80f0, type: 3}
   DrawRustle: {fileID: 8300000, guid: b3afa5be7abeedd49b16d3a50f62346d, type: 3}
   DrawBolt: {fileID: 8300000, guid: f57bc2872eb075f45a2edc67c4066adb, type: 3}
   DrawSights: {fileID: 8300000, guid: 7ec469c8fe5d887458802dcc383cfb86, type: 3}

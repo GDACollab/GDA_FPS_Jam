@@ -15,6 +15,9 @@ public class SunflowerGunAnimationEvents : MonoBehaviour
 
 
     [Header("Audio References")]
+    public AudioClip ShroudRotate;
+    public AudioClip ShroudRotateShort;
+    [Space(15)]
     public AudioClip DrawRustle;
     public AudioClip DrawBolt;
     public AudioClip DrawSights;
@@ -50,7 +53,7 @@ public class SunflowerGunAnimationEvents : MonoBehaviour
     public void PlayBarrelSteamEmitter()
     {
         animator.PlayParticleEmitter(BarrelSteam);
-        PlayFireSteamSound();
+        PlayFireSteamSound(1f);
     }
 
     public void PlayReloadEjectionSteamEmitter()
@@ -66,91 +69,101 @@ public class SunflowerGunAnimationEvents : MonoBehaviour
 
 
 #region Sound Functions
-    public void PlayDrawRustleSound()
+    public void PlayShroudRotateSound(float volume)
     {
-        animator.PlayAudio(DrawRustle);
+        animator.PlayAudio(ShroudRotate, volume);
     }
-    public void PlayDrawBoltSound()
+    public void PlayShroudRotateShortSound(float volume)
     {
-        animator.PlayAudio(DrawBolt);
-    }
-    public void PlayDrawSightsSound()
-    {
-        animator.PlayAudio(DrawSights);
+        animator.PlayAudio(ShroudRotateShort, volume);
     }
 
 
-    public void PlayADSOnSound()
+    public void PlayDrawRustleSound(float volume)
     {
-        animator.PlayAudio(ADS_On);
+        animator.PlayAudio(DrawRustle, volume);
     }
-    public void PlayADSOffSound()
+    public void PlayDrawBoltSound(float volume)
     {
-        animator.PlayAudio(ADS_Off);
+        animator.PlayAudio(DrawBolt, volume);
+    }
+    public void PlayDrawSightsSound(float volume)
+    {
+        animator.PlayAudio(DrawSights, volume);
     }
 
 
-    public void PlayFireMainSound()
+    public void PlayADSOnSound(float volume)
     {
-        animator.PlayAudio(FireMain);
+        animator.PlayAudio(ADS_On, volume);
     }
-    public void PlayFireSteamSound()
+    public void PlayADSOffSound(float volume)
     {
-        animator.PlayAudio(FireSteam);
+        animator.PlayAudio(ADS_Off, volume);
+    }
+
+
+    public void PlayFireMainSound(float volume)
+    {
+        animator.PlayAudio(FireMain, volume);
+    }
+    public void PlayFireSteamSound(float volume)
+    {
+        animator.PlayAudio(FireSteam, volume);
     }
 
     
-    public void PlayReloadOpenSound()
+    public void PlayReloadOpenSound(float volume)
     {
-        animator.PlayAudio(ReloadOpen);
+        animator.PlayAudio(ReloadOpen, volume);
     }
-    public void PlayReloadOpenEjectMagSound()
+    public void PlayReloadOpenEjectMagSound(float volume)
     {
-        animator.PlayAudio(ReloadOpenEjectMag); // this needs to be played at a much lower volume than normal
+        animator.PlayAudio(ReloadOpenEjectMag, volume); // this needs to be played at a much lower volume than normal
     }
-    public void PlayReloadOpenCaseHitGroundSound()
+    public void PlayReloadOpenCaseHitGroundSound(float volume)
     {
-        animator.PlayAudio(ReloadOpenCaseHitGround);
-    }
-
-
-    public void PlayReloadGrabMagSound()
-    {
-        animator.PlayAudio(ReloadGrabMag);
-    }
-    public void PlayReloadInsertMagSound()
-    {
-        animator.PlayAudio(ReloadInsertMag);
-    }
-    public void PlayReloadInsertProjectileSound()
-    {
-        animator.PlayAudio(ReloadInsertProjectile);
+        animator.PlayAudio(ReloadOpenCaseHitGround, volume);
     }
 
 
-    public void PlayReloadLockMechanismSound()
+    public void PlayReloadGrabMagSound(float volume)
     {
-        animator.PlayAudio(ReloadLockMechanism);
+        animator.PlayAudio(ReloadGrabMag, volume);
     }
-    public void PlayReloadLockRustleSound()
+    public void PlayReloadInsertMagSound(float volume)
     {
-        animator.PlayAudio(ReloadLockRustle);
+        animator.PlayAudio(ReloadInsertMag, volume);
     }
-
-
-    public void PlayReloadBoltFirstSound()
+    public void PlayReloadInsertProjectileSound(float volume)
     {
-        animator.PlayAudio(ReloadBoltFirst);
-    }
-    public void PlayReloadBoltSecondSound()
-    {
-        animator.PlayAudio(ReloadBoltSecond);
+        animator.PlayAudio(ReloadInsertProjectile, volume);
     }
 
 
-    public void PlayReloadEndSound()
+    public void PlayReloadLockMechanismSound(float volume)
     {
-        animator.PlayAudio(ReloadEnd);
+        animator.PlayAudio(ReloadLockMechanism, volume);
+    }
+    public void PlayReloadLockRustleSound(float volume)
+    {
+        animator.PlayAudio(ReloadLockRustle, volume);
+    }
+
+
+    public void PlayReloadBoltFirstSound(float volume)
+    {
+        animator.PlayAudio(ReloadBoltFirst, volume);
+    }
+    public void PlayReloadBoltSecondSound(float volume)
+    {
+        animator.PlayAudio(ReloadBoltSecond, volume);
+    }
+
+
+    public void PlayReloadEndSound(float volume)
+    {
+        animator.PlayAudio(ReloadEnd, volume);
     }
 #endregion
 }
