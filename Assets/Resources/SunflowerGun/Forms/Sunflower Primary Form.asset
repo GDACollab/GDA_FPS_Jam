@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: Sunflower Primary Form
   description: Charges up a shot and immediately fires a powerful sniper shot once
-    fully charges
+    fully charged
   icon: {fileID: 0}
   pivot: {fileID: 0}
   firingType: 2
@@ -25,7 +25,7 @@ MonoBehaviour:
   energyRegenType: 3
   energyRegenCooldown: 3.5
   energyRegenRate: 0
-  energyMax: 1
+  energyMax: 5
   energyCost: 1
   shareEnergyWithOtherForm: 1
   autoReloadOnEmpty: 1

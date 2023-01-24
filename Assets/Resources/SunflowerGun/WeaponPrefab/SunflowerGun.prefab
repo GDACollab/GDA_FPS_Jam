@@ -1570,8 +1570,8 @@ MonoBehaviour:
   ReloadEjectionSteam: {fileID: 2842228927076121286}
   MuzzleFlash: {fileID: 8933625282433093970}
   DrawRustle: {fileID: 8300000, guid: b3afa5be7abeedd49b16d3a50f62346d, type: 3}
-  DrawBolt: {fileID: 0}
-  DrawSights: {fileID: 0}
+  DrawBolt: {fileID: 8300000, guid: f57bc2872eb075f45a2edc67c4066adb, type: 3}
+  DrawSights: {fileID: 8300000, guid: 7ec469c8fe5d887458802dcc383cfb86, type: 3}
   ADS_On: {fileID: 8300000, guid: 42de44cc162f63148a18f53817d2907a, type: 3}
   ADS_Off: {fileID: 8300000, guid: 6e492a07d8994df4b9bf71ef01d2d132, type: 3}
   FireMain: {fileID: 8300000, guid: 062ac5b3ce2e570408690a16bd898524, type: 3}
@@ -1588,7 +1588,7 @@ MonoBehaviour:
   ReloadLockRustle: {fileID: 8300000, guid: 6bc897dc0dea2b44180bdbce646d19ae, type: 3}
   ReloadBoltFirst: {fileID: 8300000, guid: 05b10425778dbc9438bc01790775c7d2, type: 3}
   ReloadBoltSecond: {fileID: 8300000, guid: f2f450177c387b540ac6012f70330fbe, type: 3}
-  ReloadEnd: {fileID: 0}
+  ReloadEnd: {fileID: 8300000, guid: ca47f76acf0fcd746a3286918e8e0394, type: 3}
 --- !u!4 &2461761190936307621 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3736695944768606535, guid: 9cafdd71cb7c4cf4c85200b353704a07,

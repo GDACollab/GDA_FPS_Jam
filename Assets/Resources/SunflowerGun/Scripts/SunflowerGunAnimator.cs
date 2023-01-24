@@ -85,10 +85,13 @@ public void Draw()
         chargingUpSoundSource.Play();
     }
 
-    private void StopCharge()
+    private void StopCharge(bool stopChargingSound = true)
     {
         isCharging = false;
-        chargingUpSoundSource.Stop();
+        if (stopChargingSound)
+        {
+            chargingUpSoundSource.Stop();
+        }
     }
 
     public void CancelCharge()
@@ -102,7 +105,7 @@ public void Draw()
 #region Shooting Functions
     public void Shoot()
     {
-        StopCharge();
+        StopCharge(false);
 
         animator.SetTrigger("Fire");
     }
