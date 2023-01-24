@@ -9,8 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3648734522970492177}
-  - component: {fileID: 3758195327176043811}
-  - component: {fileID: 2754127977494684540}
+  - component: {fileID: 463342127536297475}
+  - component: {fileID: 2022759239000881398}
+  - component: {fileID: 5227399151833200904}
+  - component: {fileID: 6595648333295484527}
   m_Layer: 9
   m_Name: Sunflower Primary Projectile
   m_TagString: Untagged
@@ -33,7 +35,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3758195327176043811
+--- !u!114 &463342127536297475
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,28 +44,56 @@ MonoBehaviour:
   m_GameObject: {fileID: 3648734522970492190}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcf66db4b8c65bb478fe57371af8cd1f, type: 3}
+  m_Script: {fileID: 11500000, guid: 72fdd8f2280a7b140b51fea25ff41891, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _rigidbody: {fileID: 2022759239000881398}
   damage: 14
+  speed: 200
   lifespan: 0.5
-  hipSpread: 0.06
+  hipSpread: 0
   ADSspread: 0
   targetPosition: {x: 0, y: 0, z: 0}
-  hasRaycastHit: 0
-  lineRenderer: {fileID: 2754127977494684540}
-  raycastCheckLayers:
-    serializedVersion: 2
-    m_Bits: 1
---- !u!120 &2754127977494684540
-LineRenderer:
+  hasTargetPosition: 0
+--- !u!54 &2022759239000881398
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3648734522970492190}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &5227399151833200904
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3648734522970492190}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!96 &6595648333295484527
+TrailRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3648734522970492190}
   m_Enabled: 1
-  m_CastShadows: 0
+  m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -75,7 +105,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 86050f65c06837e478a38698ac58809a, type: 2}
+  - {fileID: 2100000, guid: a9f04c2e0fa439e408e2f00b31d77153, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96,9 +126,7 @@ LineRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Positions:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 1}
+  m_Time: 1.6
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -107,22 +135,40 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.057154253
+        value: 0.40909004
         inSlope: 0
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.26177287
+        value: 0.76233435
+        inSlope: 0.9768571
+        outSlope: 0.9768571
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.48246568
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0.13246727
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
+      key0: {r: 1, g: 1, b: 1, a: 0.101960786}
       key1: {r: 1, g: 1, b: 1, a: 1}
-      key2: {r: 0, g: 0, b: 0, a: 1}
-      key3: {r: 0, g: 0, b: 0, a: 0}
+      key2: {r: 0, g: 0, b: 0, a: 0.8627451}
+      key3: {r: 0, g: 0, b: 0, a: 0.015686275}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
@@ -136,21 +182,22 @@ LineRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 65535
-      atime2: 65535
-      atime3: 0
+      atime1: 14264
+      atime2: 36044
+      atime3: 65535
       atime4: 0
       atime5: 0
       atime6: 0
       atime7: 0
       m_Mode: 0
       m_NumColorKeys: 2
-      m_NumAlphaKeys: 2
+      m_NumAlphaKeys: 4
     numCornerVertices: 0
-    numCapVertices: 15
+    numCapVertices: 0
     alignment: 0
-    textureMode: 1
+    textureMode: 0
     shadowBias: 0.5
     generateLightingData: 0
-  m_UseWorldSpace: 1
-  m_Loop: 0
+  m_MinVertexDistance: 0.1
+  m_Autodestruct: 0
+  m_Emitting: 1
