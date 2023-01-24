@@ -16,11 +16,16 @@ public class SunflowerGunAnimator : MonoBehaviour
     private SunflowerChargeController controller;
 
     private bool isCharging = false;
+    private bool currentlyADS = false;
     // private bool reloadingAnimationPlayed = false;
 
     [Header("Audio References")]
     public AudioSource chargingUpSoundSource;
     public AudioSource miscAudioSource;
+    [Space(15)]
+    public AudioSource adsAudioSource;
+    public AudioClip adsOnSound;
+    public AudioClip adsOffSound;
 
     private void Awake()
     {
@@ -54,6 +59,21 @@ public class SunflowerGunAnimator : MonoBehaviour
         if( isCharging )
         {
             animator.SetFloat("ChargeValue", currentPlayerStatus._currentPrimaryHoldDuration / currentPlayerStatus.currentForm.primaryForm.maxHoldDuration );
+        }
+
+        if ( currentlyADS != isADS() )
+        {
+            currentlyADS = isADS();
+            if (currentlyADS)
+            {
+                adsAudioSource.Stop();
+                adsAudioSource.PlayOneShot(adsOnSound, 1f);
+            }  
+            else
+            {
+                adsAudioSource.Stop();
+                adsAudioSource.PlayOneShot(adsOffSound, 1f);
+            }
         }
     }
 

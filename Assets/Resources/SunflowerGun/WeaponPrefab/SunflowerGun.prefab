@@ -349,6 +349,9 @@ MonoBehaviour:
   animator: {fileID: 4957339771174626991}
   chargingUpSoundSource: {fileID: 5828483038541233397}
   miscAudioSource: {fileID: 6177954815053331878}
+  adsAudioSource: {fileID: 8110275035957894941}
+  adsOnSound: {fileID: 8300000, guid: 42de44cc162f63148a18f53817d2907a, type: 3}
+  adsOffSound: {fileID: 8300000, guid: 6e492a07d8994df4b9bf71ef01d2d132, type: 3}
 --- !u!114 &-4166555581262234945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -580,6 +583,12 @@ AudioSource:
 --- !u!82 &6177954815053331878 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 6879564276789214604, guid: 267f0d07ee54d5a4bbe29d0ce10192af,
+    type: 3}
+  m_PrefabInstance: {fileID: 776200708538368042}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &8110275035957894941 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8811541445223325495, guid: 267f0d07ee54d5a4bbe29d0ce10192af,
     type: 3}
   m_PrefabInstance: {fileID: 776200708538368042}
   m_PrefabAsset: {fileID: 0}
