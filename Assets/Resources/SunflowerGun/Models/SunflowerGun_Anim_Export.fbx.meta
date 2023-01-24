@@ -145,7 +145,7 @@ ModelImporter:
       takeName: SunflowerGunArmature|Idle
       internalID: 3568454424456001239
       firstFrame: 0
-      lastFrame: 1
+      lastFrame: 100
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
