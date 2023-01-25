@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class SunflowerProjectile : BaseHitscan
 {
+    [Header("Sunflower VFX")]
     public Rigidbody trailRigidbody;
+    public Rigidbody particleEmitterRigidbody;
 
 
     public override void Start()
@@ -38,6 +40,7 @@ public class SunflowerProjectile : BaseHitscan
     public void ApplyTrailRendererForce()
     {
         Vector3 impulseDirection = transform.forward;
-        trailRigidbody.AddForce(impulseDirection * 500f, ForceMode.VelocityChange);
+        trailRigidbody.AddForce(impulseDirection * 1000f, ForceMode.VelocityChange);
+        particleEmitterRigidbody.AddForce(impulseDirection * 175f, ForceMode.VelocityChange);
     }
 }
