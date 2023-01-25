@@ -10,9 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3648734522970492177}
   - component: {fileID: 463342127536297475}
-  - component: {fileID: 2022759239000881398}
-  - component: {fileID: 5227399151833200904}
-  - component: {fileID: 6595648333295484527}
   m_Layer: 9
   m_Name: Sunflower Primary Projectile
   m_TagString: Untagged
@@ -31,7 +28,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7730982814626665359}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -47,21 +45,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72fdd8f2280a7b140b51fea25ff41891, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rigidbody: {fileID: 2022759239000881398}
   damage: 14
-  speed: 500
   lifespan: 0.5
-  hipSpread: 0
+  hipSpread: 0.02
   ADSspread: 0
   targetPosition: {x: 0, y: 0, z: 0}
-  hasTargetPosition: 0
---- !u!54 &2022759239000881398
+  hasRaycastHit: 0
+  lineRenderer: {fileID: 0}
+  raycastCheckLayers:
+    serializedVersion: 2
+    m_Bits: 2147483647
+  trailRigidbody: {fileID: 558740035554138870}
+--- !u!1 &4716516232607880291
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7730982814626665359}
+  - component: {fileID: 558740035554138870}
+  - component: {fileID: 2430209601938487218}
+  m_Layer: 0
+  m_Name: Trail Renderer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7730982814626665359
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4716516232607880291}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3648734522970492177}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &558740035554138870
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3648734522970492190}
+  m_GameObject: {fileID: 4716516232607880291}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -71,27 +105,14 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &5227399151833200904
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3648734522970492190}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.2
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!96 &6595648333295484527
+--- !u!96 &2430209601938487218
 TrailRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3648734522970492190}
+  m_GameObject: {fileID: 4716516232607880291}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -126,16 +147,16 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 240
+  m_Time: 15360
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1
+    widthMultiplier: 5
     widthCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.59090614
+        value: 0.12337506
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -143,17 +164,17 @@ TrailRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.26177287
-        value: 0.9311652
-        inSlope: 0.9768571
-        outSlope: 0.9768571
+        time: 0.41389665
+        value: 0.9246723
+        inSlope: 0.600257
+        outSlope: 0.600257
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.48246568
-        outWeight: 0
+        outWeight: 0.19050792
       - serializedVersion: 3
         time: 1
-        value: 0.25584984
+        value: 0.02208519
         inSlope: 0
         outSlope: 0
         tangentMode: 0
