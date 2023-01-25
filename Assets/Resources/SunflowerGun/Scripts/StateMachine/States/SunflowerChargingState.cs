@@ -1,8 +1,8 @@
 namespace Sunflower
 {
-    public class ChargingState : BaseState
+    public class ChargingState : BaseState<SunflowerMainStateMachine>
     {
-        public ChargingState( SunflowerChargeController controller, string name ) : base( controller, name )
+        public ChargingState( SunflowerMainStateMachine stateMachine, string name ) : base( stateMachine, name )
         {
 
         }
@@ -21,13 +21,13 @@ namespace Sunflower
             {
                 animator.CancelCharge();
 
-                controller.CurrentState = controller.idleState;
+                stateMachine.CurrentState = stateMachine.idleState;
                 return;
             }
 
             if( FormController.Instance.FiredGun )
             {
-                controller.CurrentState = controller.firingState;
+                stateMachine.CurrentState = stateMachine.firingState;
                 return;
             }
 
@@ -35,7 +35,7 @@ namespace Sunflower
             {
                 animator.CancelCharge();
 
-                controller.CurrentState = controller.reloadingState;
+                stateMachine.CurrentState = stateMachine.reloadingState;
                 return;
             }
         }

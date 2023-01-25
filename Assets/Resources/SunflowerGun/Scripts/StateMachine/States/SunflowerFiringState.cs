@@ -1,8 +1,8 @@
 namespace Sunflower
 {
-    public class FiringState : BaseState
+    public class FiringState : BaseState<SunflowerMainStateMachine>
     {
-        public FiringState( SunflowerChargeController controller, string name ) : base( controller, name )
+        public FiringState( SunflowerMainStateMachine stateMachine, string name ) : base( stateMachine, name )
         {
 
         }
@@ -16,7 +16,7 @@ namespace Sunflower
         {
             if ( FormController.Instance._isReloading )
             {
-                controller.CurrentState = controller.reloadingState;
+                stateMachine.CurrentState = stateMachine.reloadingState;
                 return;
             }
         }
@@ -28,7 +28,7 @@ namespace Sunflower
 
         public void AnimDone()
         {
-            controller.CurrentState = controller.idleState;
+            stateMachine.CurrentState = stateMachine.idleState;
         }
     }
 }

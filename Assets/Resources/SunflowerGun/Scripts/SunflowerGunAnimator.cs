@@ -16,8 +16,7 @@ public class SunflowerGunAnimator : MonoBehaviour
     private SunflowerChargeController controller;
 
     private bool isCharging = false;
-    private bool currentlyADS = false;
-    // private bool reloadingAnimationPlayed = false;
+    private bool isCurrentlyADS = false;
 
     [Header("Audio References")]
     public AudioSource chargingUpSoundSource;
@@ -60,21 +59,6 @@ public class SunflowerGunAnimator : MonoBehaviour
         {
             animator.SetFloat("ChargeValue", currentPlayerStatus._currentPrimaryHoldDuration / currentPlayerStatus.currentForm.primaryForm.maxHoldDuration );
         }
-
-        if ( currentlyADS != isADS() )
-        {
-            currentlyADS = isADS();
-            if (currentlyADS)
-            {
-                adsAudioSource.Stop();
-                adsAudioSource.PlayOneShot(adsOnSound, 1f);
-            }  
-            else
-            {
-                adsAudioSource.Stop();
-                adsAudioSource.PlayOneShot(adsOffSound, 1f);
-            }
-        }
     }
 
 #region Misc Functions
@@ -89,10 +73,28 @@ public class SunflowerGunAnimator : MonoBehaviour
     }
 #endregion
 
-public void Draw()
-{
-    animator.SetTrigger("Draw");
-}
+    public void Draw()
+    {
+        animator.SetTrigger("Draw");
+    }
+
+#region ADS Functions
+    public void TurnOnADS()
+    {
+        isCurrentlyADS = true;
+
+        adsAudioSource.Stop();
+        adsAudioSource.PlayOneShot(adsOnSound, 1f);
+    }
+
+    public void TurnOffADS()
+    {
+        isCurrentlyADS = false;
+        
+        adsAudioSource.Stop();
+        adsAudioSource.PlayOneShot(adsOffSound, 1f);
+    }
+#endregion
 
 #region Charge Functions
     public void BeginCharge()
@@ -132,7 +134,7 @@ public void Draw()
 
     public void ShootingDone()
     {
-        controller.firingState.AnimDone();
+        controller.mainStateMachine.firingState.AnimDone();
     }
 #endregion
 

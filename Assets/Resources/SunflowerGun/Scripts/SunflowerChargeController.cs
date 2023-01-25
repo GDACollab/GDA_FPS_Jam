@@ -13,51 +13,25 @@ public class SunflowerChargeController : MonoBehaviour
     public FormObject formObject;
     [HideInInspector] public SunflowerGunAnimator animator;
 
-    private BaseState _currentState;
-    public BaseState CurrentState
-    {
-        get
-        {
-            return _currentState;
-        }
-        set
-        {
-            Debug.Log($"Changing state to {value.name}");
-            if( _currentState != null )
-            {
-                _currentState.Exit();
-            }
-
-            _currentState = value;
-
-            _currentState.Enter();
-        }
-    }
-
-    public IdleState idleState;
-    public ChargingState chargingState;
-    public FiringState firingState;
-    public ReloadingState reloadingState;
+    public SunflowerMainStateMachine mainStateMachine;
+    public SunflowerAdsStateMachine adsStateMachine;
 
     private void Awake()
     {
         animator = GetComponent<SunflowerGunAnimator>();
 
-        SetupStateMachine();
+        SetupStateMachines();
     }
 
-    private void SetupStateMachine()
+    private void SetupStateMachines()
     {
-        idleState = new IdleState( this, "Idle" );
-        chargingState = new ChargingState( this, "Charging" );
-        firingState = new FiringState( this, "Firing" );
-        reloadingState = new ReloadingState( this, "Reloading" );
-
-        CurrentState = idleState;
+        mainStateMachine = new SunflowerMainStateMachine( this );
+        adsStateMachine = new SunflowerAdsStateMachine( this );
     }
 
     private void Update()
     {
-        CurrentState.Update();
+        mainStateMachine.Update();
+        adsStateMachine.Update();
     }
 }

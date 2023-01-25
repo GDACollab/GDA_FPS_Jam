@@ -1,8 +1,8 @@
 namespace Sunflower
 {
-    public class IdleState : BaseState
+    public class IdleState : BaseState<SunflowerMainStateMachine>
     {
-        public IdleState( SunflowerChargeController controller, string name ) : base( controller, name )
+        public IdleState( SunflowerMainStateMachine stateMachine, string name ) : base( stateMachine, name )
         {
 
         }
@@ -16,7 +16,7 @@ namespace Sunflower
         {
             if ( FormController.Instance._isReloading )
             {
-                controller.CurrentState = controller.reloadingState;
+                stateMachine.CurrentState = stateMachine.reloadingState;
                 return;
             }
 
@@ -26,7 +26,7 @@ namespace Sunflower
             {
                 if( FormController.Instance._currentPrimaryIsPressed )
                 {
-                    controller.CurrentState = controller.chargingState;
+                    stateMachine.CurrentState = stateMachine.chargingState;
                     return;
                 }
                 else
