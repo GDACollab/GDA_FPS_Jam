@@ -343,7 +343,7 @@ ModelImporter:
       name: SunflowerGunArmature|ShotState1
       takeName: SunflowerGunArmature|ShotState1
       internalID: 5378933803386730663
-      firstFrame: 0
+      firstFrame: 1
       lastFrame: 1
       wrapMode: 0
       orientationOffsetY: 0
@@ -372,7 +372,7 @@ ModelImporter:
       name: SunflowerGunArmature|ShotState2
       takeName: SunflowerGunArmature|ShotState2
       internalID: -1462659981220863715
-      firstFrame: 0
+      firstFrame: 1
       lastFrame: 1
       wrapMode: 0
       orientationOffsetY: 0
@@ -401,7 +401,7 @@ ModelImporter:
       name: SunflowerGunArmature|ShotState3
       takeName: SunflowerGunArmature|ShotState3
       internalID: 9025685833608838405
-      firstFrame: 0
+      firstFrame: 1
       lastFrame: 1
       wrapMode: 0
       orientationOffsetY: 0
