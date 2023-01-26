@@ -26,6 +26,10 @@ public class SunflowerGunAnimator : MonoBehaviour
     public AudioClip adsOnSound;
     public AudioClip adsOffSound;
 
+    [Header("Misc. References")]
+    public GameObject lorePopupPrefab;
+
+
     private void Awake()
     {
         controller = GetComponent<SunflowerChargeController>();
@@ -70,6 +74,11 @@ public class SunflowerGunAnimator : MonoBehaviour
     public void PlayParticleEmitter(ParticleSystem toPlay)
     {
         toPlay.Play();
+    }
+
+    public GameObject SpawnLorePopup()
+    {
+        return Instantiate(lorePopupPrefab);
     }
 #endregion
 

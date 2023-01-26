@@ -15,6 +15,7 @@ public class SunflowerChargeController : MonoBehaviour
 
     public SunflowerMainStateMachine mainStateMachine;
     public SunflowerAdsStateMachine adsStateMachine;
+    public SunflowerLoreStateMachine loreStateMachine;
 
     private void Awake()
     {
@@ -27,11 +28,13 @@ public class SunflowerChargeController : MonoBehaviour
     {
         mainStateMachine = new SunflowerMainStateMachine( this );
         adsStateMachine = new SunflowerAdsStateMachine( this );
+        loreStateMachine = new SunflowerLoreStateMachine( this );
     }
 
     private void Update()
     {
         mainStateMachine.Update();
         adsStateMachine.Update();
+        loreStateMachine.Update();
     }
 }
