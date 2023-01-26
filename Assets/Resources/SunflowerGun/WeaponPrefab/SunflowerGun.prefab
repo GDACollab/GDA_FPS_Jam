@@ -352,6 +352,8 @@ MonoBehaviour:
   adsAudioSource: {fileID: 8110275035957894941}
   adsOnSound: {fileID: 8300000, guid: 42de44cc162f63148a18f53817d2907a, type: 3}
   adsOffSound: {fileID: 8300000, guid: 6e492a07d8994df4b9bf71ef01d2d132, type: 3}
+  lorePopupPrefab: {fileID: 2484382400477052929, guid: 7d63010998e0a1f45bcccea7740ddfbd,
+    type: 3}
 --- !u!114 &-4166555581262234945
 MonoBehaviour:
   m_ObjectHideFlags: 0

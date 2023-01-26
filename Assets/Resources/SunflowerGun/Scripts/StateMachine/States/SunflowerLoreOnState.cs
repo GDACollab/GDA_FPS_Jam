@@ -11,7 +11,7 @@ namespace Sunflower
 
         public override void Enter()
         {
-            stateMachine.lorePopup = animator.SpawnLorePopup();
+            stateMachine.lorePopup.SetActive(true);
         }
 
         public override void Update()
@@ -24,7 +24,7 @@ namespace Sunflower
 
         public override void Exit()
         {
-            GameObject.Destroy(stateMachine.lorePopup);
+            stateMachine.lorePopup.SetActive(false);
         }
     }
 }

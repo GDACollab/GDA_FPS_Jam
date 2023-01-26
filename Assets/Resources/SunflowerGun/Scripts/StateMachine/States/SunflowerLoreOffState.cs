@@ -4,7 +4,8 @@ namespace Sunflower
     {
         public LoreOffState( SunflowerLoreStateMachine stateMachine, string name ) : base( stateMachine, name )
         {
-
+            stateMachine.lorePopup = animator.SpawnLorePopup();
+            stateMachine.lorePopup.SetActive(false);
         }
 
         public override void Enter()
