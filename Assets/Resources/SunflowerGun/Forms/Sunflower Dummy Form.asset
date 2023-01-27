@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sunflower Dummy Form
   m_EditorClassIdentifier: 
   id: Sunflower Dummy Form
-  description: does nothing lmao
+  description: Displays lore tied to the gun
   icon: {fileID: 0}
   pivot: {fileID: 0}
   firingType: 1
