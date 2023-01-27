@@ -19,6 +19,13 @@ namespace Sunflower
 
         public override void Update()
         {
+            // If reloading, force state machine to go into Reloading to prevent fuckery as they say in Guyana
+            if ( FormController.Instance._isReloading )
+            {
+                stateMachine.CurrentState = stateMachine.reloadingState;
+                return;
+            }
+
             if ( !FormController.Instance._currentPrimaryIsPressed )
             {
                 stateMachine.CurrentState = stateMachine.idleState;
