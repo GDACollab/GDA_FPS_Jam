@@ -67,7 +67,7 @@ public class SunflowerGunAnimator : MonoBehaviour
 
     public GameObject SpawnLorePopup()
     {
-        return Instantiate(lorePopupPrefab);
+        return Instantiate(lorePopupPrefab, transform);
     }
 #endregion
 
