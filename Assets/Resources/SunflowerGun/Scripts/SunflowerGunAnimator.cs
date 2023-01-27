@@ -18,6 +18,9 @@ public class SunflowerGunAnimator : MonoBehaviour
     private bool isCharging = false;
     private bool isCurrentlyADS = false;
 
+    //private float adsValue = 0f;
+    private float adsTarget = 0f;
+
     [Header("Audio References")]
     public AudioSource chargingUpSoundSource;
     public AudioSource miscAudioSource;
@@ -42,26 +45,12 @@ public class SunflowerGunAnimator : MonoBehaviour
 
     private void Update()
     {
-        // Check animation states
-        // This is the only place where these animation parameters are altered
-        // Feel free to remove these and set the animation up how you want
- 
-        // animController.SetBool("Fire", isFiring() && !isReloading());
-
-        // if (isReloading() && !reloadingAnimationPlayed)
-        // {
-        //     animController.SetTrigger("Reload");
-        //     reloadingAnimationPlayed = true;
-        // }
-
-        // if (!isReloading())
-        // {
-        //     reloadingAnimationPlayed = false;
-        // }
+        //SunflowerMath.Approach( adsValue, adsTarget, .05f, Time.deltaTime );
+        animator.SetFloat( "ADSValue", adsTarget );
 
         if( isCharging )
         {
-            animator.SetFloat("ChargeValue", currentPlayerStatus._currentPrimaryHoldDuration / currentPlayerStatus.currentForm.primaryForm.maxHoldDuration );
+            animator.SetFloat( "ChargeValue", currentPlayerStatus._currentPrimaryHoldDuration / currentPlayerStatus.currentForm.primaryForm.maxHoldDuration );
         }
     }
 
@@ -91,6 +80,7 @@ public class SunflowerGunAnimator : MonoBehaviour
     public void TurnOnADS()
     {
         isCurrentlyADS = true;
+        adsTarget = 1f;
 
         adsAudioSource.Stop();
         adsAudioSource.PlayOneShot(adsOnSound, 1f);
@@ -99,6 +89,7 @@ public class SunflowerGunAnimator : MonoBehaviour
     public void TurnOffADS()
     {
         isCurrentlyADS = false;
+        adsTarget = 0f;
         
         adsAudioSource.Stop();
         adsAudioSource.PlayOneShot(adsOffSound, 1f);
