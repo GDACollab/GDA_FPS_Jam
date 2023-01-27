@@ -11,6 +11,7 @@ namespace Sunflower
         public IdleState idleState;
         public ChargingState chargingState;
         public FiringState firingState;
+        public EmptyMagState emptyMagState;
         public ReloadingState reloadingState;
 
         public SunflowerMainStateMachine( SunflowerChargeController controller ) : base( controller )
@@ -23,6 +24,7 @@ namespace Sunflower
             idleState = new IdleState( this, "Idle" );
             chargingState = new ChargingState( this, "Charging" );
             firingState = new FiringState( this, "Firing" );
+            emptyMagState = new EmptyMagState( this, "Empty Mag" );
             reloadingState = new ReloadingState( this, "Reloading" );
 
             CurrentState = idleState;

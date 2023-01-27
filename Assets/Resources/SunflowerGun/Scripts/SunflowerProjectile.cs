@@ -25,13 +25,12 @@ public class SunflowerProjectile : BaseHitscan
             SetTargetPosition(new Ray(Camera.main.transform.position, transform.forward).GetPoint(200));
         }
 
-        
+        ApplyTrailRendererForce();
+
         if(!hasRaycastHit)
         {
             return;
         }
-
-        ApplyTrailRendererForce();
 
         ProcessDamage();
     }
@@ -40,6 +39,7 @@ public class SunflowerProjectile : BaseHitscan
     public void ApplyTrailRendererForce()
     {
         Vector3 impulseDirection = transform.forward;
+        Debug.Log(impulseDirection);
         trailRigidbody.AddForce(impulseDirection * 1000f, ForceMode.VelocityChange);
         particleEmitterRigidbody.AddForce(impulseDirection * 175f, ForceMode.VelocityChange);
     }

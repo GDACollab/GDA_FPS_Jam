@@ -16,7 +16,6 @@ public class SunflowerGunAnimator : MonoBehaviour
     private SunflowerChargeController controller;
 
     private bool isCharging = false;
-    private bool isCurrentlyADS = false;
 
     //private float adsValue = 0f;
     private float adsTarget = 0f;
@@ -28,9 +27,12 @@ public class SunflowerGunAnimator : MonoBehaviour
     public AudioSource adsAudioSource;
     public AudioClip adsOnSound;
     public AudioClip adsOffSound;
+    [Space(15)]
+    public AudioClip emptyMagSound;
+
 
     [Header("Misc. References")]
-    public GameObject lorePopupPrefab;
+    public GameObject lorePopup;
 
 
     private void Awake()
@@ -65,9 +67,9 @@ public class SunflowerGunAnimator : MonoBehaviour
         toPlay.Play();
     }
 
-    public GameObject SpawnLorePopup()
+    public GameObject GetLorePopup()
     {
-        return Instantiate(lorePopupPrefab, transform);
+        return lorePopup;
     }
 #endregion
 
@@ -79,7 +81,6 @@ public class SunflowerGunAnimator : MonoBehaviour
 #region ADS Functions
     public void TurnOnADS()
     {
-        isCurrentlyADS = true;
         adsTarget = 1f;
 
         adsAudioSource.Stop();
@@ -88,7 +89,6 @@ public class SunflowerGunAnimator : MonoBehaviour
 
     public void TurnOffADS()
     {
-        isCurrentlyADS = false;
         adsTarget = 0f;
         
         adsAudioSource.Stop();
