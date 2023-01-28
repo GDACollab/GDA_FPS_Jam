@@ -241,7 +241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3268e580b1bb1a499459aa2549390c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponID: Sunflower
+  weaponID: Himawari
   primaryForm: {fileID: 11400000, guid: 96c579946d6778c4085fad686f83283f, type: 2}
   secondaryForm: {fileID: 11400000, guid: c492506868c3d094a83a059ccb80a956, type: 2}
   ADSVirtualCamera: {fileID: 1591959767614796963}
