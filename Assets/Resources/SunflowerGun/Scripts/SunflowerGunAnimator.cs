@@ -58,7 +58,7 @@ public class SunflowerGunAnimator : MonoBehaviour
             adsValue = SunflowerMath.Approach( adsValue, adsTarget, .05f, Time.deltaTime );
         }
         
-        animator.SetFloat( "ADSValue", adsValue );
+        animator.SetLayerWeight( 1, adsValue );
 
         if( isCharging )
         {
