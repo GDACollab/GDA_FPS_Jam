@@ -23,9 +23,10 @@ public class SunflowerProjectile : BaseHitscan
             if (hitInfo.rigidbody)
             {
                 Vector3 forceDirection = hitInfo.transform.position - targetPosition;
+                forceDirection.Normalize();
                 forceDirection = (forceDirection + transform.forward) / 2;
 
-                forceDirection.Normalize();
+                
                 hitInfo.rigidbody.AddForce(forceDirection * 100f, ForceMode.Impulse);
             }
         }
