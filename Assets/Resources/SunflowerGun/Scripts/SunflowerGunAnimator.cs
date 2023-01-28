@@ -18,7 +18,7 @@ public class SunflowerGunAnimator : MonoBehaviour
     private bool isCharging = false;
     private bool isCurrentlyADS = false;
 
-    //private float adsValue = 0f;
+    private float adsValue = 0f;
     private float adsTarget = 0f;
 
     [Header("Audio References")]
@@ -45,8 +45,18 @@ public class SunflowerGunAnimator : MonoBehaviour
 
     private void Update()
     {
-        //SunflowerMath.Approach( adsValue, adsTarget, .05f, Time.deltaTime );
-        animator.SetFloat( "ADSValue", adsTarget );
+        if( adsTarget == 0 )
+        {
+            // We are exiting out of ADS
+            adsValue = SunflowerMath.Approach( adsValue, adsTarget, .5f, Time.deltaTime );
+        }
+        else
+        {
+            // We are entering ADS
+            adsValue = SunflowerMath.Approach( adsValue, adsTarget, .05f, Time.deltaTime );
+        }
+        
+        animator.SetFloat( "ADSValue", adsValue );
 
         if( isCharging )
         {
