@@ -13,6 +13,7 @@ public class SunflowerGunAnimator : MonoBehaviour
 
     private FormController currentPlayerStatus;
     [SerializeField] private Animator animator;
+    private SunflowerGunAnimationEvents events;
     private SunflowerChargeController controller;
 
     private bool isCharging = false;
@@ -38,6 +39,7 @@ public class SunflowerGunAnimator : MonoBehaviour
     private void Awake()
     {
         controller = GetComponent<SunflowerChargeController>();
+        events = animator.GetComponent<SunflowerGunAnimationEvents>();
     }
 
     private void Start()
@@ -139,6 +141,9 @@ public class SunflowerGunAnimator : MonoBehaviour
     {
         StopCharge(false);
 
+        events.PlayFireMainSound( 1f );
+        events.PlayMuzzleFlashEmitter();
+
         animator.SetTrigger("Fire");
     }
 
@@ -151,6 +156,8 @@ public class SunflowerGunAnimator : MonoBehaviour
 #region Reload Functions
     public void Reload()
     {
+        events.PlayShroudRotateSound(1f);
+        
         animator.SetTrigger("Reload");
     }
 #endregion

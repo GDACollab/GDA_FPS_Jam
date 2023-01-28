@@ -28,7 +28,16 @@ namespace Sunflower
 
         public void AnimDone()
         {
-            stateMachine.CurrentState = stateMachine.idleState;
+            if ( FormController.Instance._currentPrimaryIsPressed && formObject._currentPrimaryEnergy != 0 )
+            {
+                stateMachine.CurrentState = stateMachine.chargingState;
+                return;
+            }
+            else
+            {
+                stateMachine.CurrentState = stateMachine.idleState;
+                return;
+            }
         }
     }
 }
