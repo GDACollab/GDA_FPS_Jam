@@ -48,7 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 14
   lifespan: 0.5
-  hipSpread: 0.02
+  hipSpread: 0.1
   ADSspread: 0
   targetPosition: {x: 0, y: 0, z: 0}
   hasRaycastHit: 0

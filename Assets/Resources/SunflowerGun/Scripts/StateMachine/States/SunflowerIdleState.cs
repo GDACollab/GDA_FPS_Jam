@@ -21,13 +21,21 @@ namespace Sunflower
             }
 
             // If we are ready to shoot
-            if( formObject._currentPrimaryEnergy != 0 &&
-                formObject._currentPrimaryCooldown <= 0)
+            if(formObject._currentPrimaryCooldown <= 0)
             {
                 if( FormController.Instance._currentPrimaryIsPressed )
                 {
-                    stateMachine.CurrentState = stateMachine.chargingState;
-                    return;
+                    // If we have ammo, enter Charging state
+                    if (formObject._currentPrimaryEnergy != 0)
+                    {
+                        stateMachine.CurrentState = stateMachine.chargingState;
+                        return;
+                    }
+                    else
+                    {
+                        stateMachine.CurrentState = stateMachine.emptyMagState;
+                        return;
+                    }
                 }
                 else
                 {

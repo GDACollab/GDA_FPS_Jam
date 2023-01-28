@@ -19,19 +19,28 @@ public class SunflowerProjectile : BaseHitscan
         {
             targetPosition = hitInfo.point;
             hasRaycastHit = true;
+
+            if (hitInfo.rigidbody)
+            {
+                Vector3 forceDirection = hitInfo.transform.position - targetPosition;
+                forceDirection.Normalize();
+                forceDirection = (forceDirection + transform.forward) / 2;
+
+                
+                hitInfo.rigidbody.AddForce(forceDirection * 100f, ForceMode.Impulse);
+            }
         }
         else
         {
             SetTargetPosition(new Ray(Camera.main.transform.position, transform.forward).GetPoint(200));
         }
 
-        
+        ApplyTrailRendererForce();
+
         if(!hasRaycastHit)
         {
             return;
         }
-
-        ApplyTrailRendererForce();
 
         ProcessDamage();
     }
