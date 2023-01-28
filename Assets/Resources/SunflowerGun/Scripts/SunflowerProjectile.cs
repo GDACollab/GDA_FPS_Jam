@@ -8,6 +8,8 @@ public class SunflowerProjectile : BaseHitscan
     public Rigidbody trailRigidbody;
     public Rigidbody particleEmitterRigidbody;
 
+    [Header("Sunflower Physics")]
+    public float forceMagnitude = 100f;
 
     public override void Start()
     {
@@ -27,7 +29,7 @@ public class SunflowerProjectile : BaseHitscan
                 forceDirection = (forceDirection + transform.forward) / 2;
 
                 
-                hitInfo.rigidbody.AddForce(forceDirection * 100f, ForceMode.Impulse);
+                hitInfo.rigidbody.AddForce(forceDirection * forceMagnitude, ForceMode.Impulse);
             }
         }
         else

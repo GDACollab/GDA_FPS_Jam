@@ -58,6 +58,7 @@ MonoBehaviour:
     m_Bits: 1
   trailRigidbody: {fileID: 558740035554138870}
   particleEmitterRigidbody: {fileID: 6384440638484308759}
+  forceMagnitude: 250
 --- !u!1 &3759264102955119121
 GameObject:
   m_ObjectHideFlags: 0
