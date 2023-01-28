@@ -273,7 +273,7 @@ ModelImporter:
         intParameter: 0
         messageOptions: 0
       - time: 0.23973091
-        functionName: NewEvent
+        functionName: PlayShroudRotateShortSound
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
