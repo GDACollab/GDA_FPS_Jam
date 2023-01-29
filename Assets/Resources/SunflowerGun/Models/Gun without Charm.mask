@@ -70,19 +70,19 @@ AvatarMask:
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Canopy/D.Back_Scope_L
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Canopy/D.Back_Scope_L/D.Back_Scope_L_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Canopy/D.Back_Scope_R
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Canopy/D.Back_Scope_R/D.Back_Scope_R_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Canopy/D.Front_Scope_L
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Canopy/D.Front_Scope_L/D.Front_Scope_L_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Canopy/D.Front_Scope_R
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Canopy/D.Front_Scope_R/D.Front_Scope_R_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Ornament_Ring
     m_Weight: 0
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Ornament_Ring/D.Charm_0
@@ -96,49 +96,49 @@ AvatarMask:
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Reload_Mechanism
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Reload_Mechanism/D.Reload_Mechanism_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Rotating_Base
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Rotating_Base/D.Barrel_Shroud_1
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Rotating_Base/D.Barrel_Shroud_1/D.Barrel_Shroud_1_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Rotating_Base/D.Barrel_Shroud_2
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Rotating_Base/D.Barrel_Shroud_2/D.Barrel_Shroud_2_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Rotating_Base/D.Barrel_Shroud_3
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Rotating_Base/D.Barrel_Shroud_3/D.Barrel_Shroud_3_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Rotating_Base/D.Barrel_Shroud_Arm_1
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Rotating_Base/D.Barrel_Shroud_Arm_1/D.Barrel_Shroud_Arm_1_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Rotating_Base/D.Barrel_Shroud_Arm_2
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Rotating_Base/D.Barrel_Shroud_Arm_2/D.Barrel_Shroud_Arm_2_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Rotating_Base/D.Barrel_Shroud_Arm_3
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Rotating_Base/D.Barrel_Shroud_Arm_3/D.Barrel_Shroud_Arm_3_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Side_Flap
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Side_Flap/D.Side_Flap_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Slide_Lever
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Slide_Lever/D.Slide_Lever_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Trigger
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Gun/D.Trigger/D.Trigger_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: SunflowerGunArmature/D.Root/D.Magazine_Clip
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Magazine_Clip/D.Magazine_Clip_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.L
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.L/D.Arm.L
@@ -160,7 +160,7 @@ AvatarMask:
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.L/D.Arm.L/D.Arm_2.L/D.Forearm.L/D.Forearm_2.L/D.Hand.L/D.Metacarpal_0.L/D.Finger_0_0.L/D.Finger_0_1.L/D.Finger_0_2.L
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.L/D.Arm.L/D.Arm_2.L/D.Forearm.L/D.Forearm_2.L/D.Hand.L/D.Metacarpal_0.L/D.Finger_0_0.L/D.Finger_0_1.L/D.Finger_0_2.L/D.Finger_0_2.L_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.L/D.Arm.L/D.Arm_2.L/D.Forearm.L/D.Forearm_2.L/D.Hand.L/D.Metacarpal_1.L
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.L/D.Arm.L/D.Arm_2.L/D.Forearm.L/D.Forearm_2.L/D.Hand.L/D.Metacarpal_1.L/D.Finger_1_0.L
@@ -170,7 +170,7 @@ AvatarMask:
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.L/D.Arm.L/D.Arm_2.L/D.Forearm.L/D.Forearm_2.L/D.Hand.L/D.Metacarpal_1.L/D.Finger_1_0.L/D.Finger_1_1.L/D.Finger_1_2.L
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.L/D.Arm.L/D.Arm_2.L/D.Forearm.L/D.Forearm_2.L/D.Hand.L/D.Metacarpal_1.L/D.Finger_1_0.L/D.Finger_1_1.L/D.Finger_1_2.L/D.Finger_1_2.L_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.L/D.Arm.L/D.Arm_2.L/D.Forearm.L/D.Forearm_2.L/D.Hand.L/D.Metacarpal_2.L
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.L/D.Arm.L/D.Arm_2.L/D.Forearm.L/D.Forearm_2.L/D.Hand.L/D.Metacarpal_2.L/D.Finger_2_0.L
@@ -180,7 +180,7 @@ AvatarMask:
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.L/D.Arm.L/D.Arm_2.L/D.Forearm.L/D.Forearm_2.L/D.Hand.L/D.Metacarpal_2.L/D.Finger_2_0.L/D.Finger_2_1.L/D.Finger_2_2.L
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.L/D.Arm.L/D.Arm_2.L/D.Forearm.L/D.Forearm_2.L/D.Hand.L/D.Metacarpal_2.L/D.Finger_2_0.L/D.Finger_2_1.L/D.Finger_2_2.L/D.Finger_2_2.L_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.L/D.Arm.L/D.Arm_2.L/D.Forearm.L/D.Forearm_2.L/D.Hand.L/D.Metacarpal_3.L
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.L/D.Arm.L/D.Arm_2.L/D.Forearm.L/D.Forearm_2.L/D.Hand.L/D.Metacarpal_3.L/D.Finger_3_0.L
@@ -190,7 +190,7 @@ AvatarMask:
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.L/D.Arm.L/D.Arm_2.L/D.Forearm.L/D.Forearm_2.L/D.Hand.L/D.Metacarpal_3.L/D.Finger_3_0.L/D.Finger_3_1.L/D.Finger_3_2.L
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.L/D.Arm.L/D.Arm_2.L/D.Forearm.L/D.Forearm_2.L/D.Hand.L/D.Metacarpal_3.L/D.Finger_3_0.L/D.Finger_3_1.L/D.Finger_3_2.L/D.Finger_3_2.L_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.L/D.Arm.L/D.Arm_2.L/D.Forearm.L/D.Forearm_2.L/D.Hand.L/D.Thumb_0.L
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.L/D.Arm.L/D.Arm_2.L/D.Forearm.L/D.Forearm_2.L/D.Hand.L/D.Thumb_0.L/D.Thumb_1.L
@@ -198,7 +198,7 @@ AvatarMask:
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.L/D.Arm.L/D.Arm_2.L/D.Forearm.L/D.Forearm_2.L/D.Hand.L/D.Thumb_0.L/D.Thumb_1.L/D.Thumb_2.L
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.L/D.Arm.L/D.Arm_2.L/D.Forearm.L/D.Forearm_2.L/D.Hand.L/D.Thumb_0.L/D.Thumb_1.L/D.Thumb_2.L/D.Thumb_2.L_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.R
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.R/D.Arm.R
@@ -220,7 +220,7 @@ AvatarMask:
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.R/D.Arm.R/D.Arm_2.R/D.Forearm.R/D.Forearm_2.R/D.Hand.R/D.Metacarpal_0.R/D.Finger_0_0.R/D.Finger_0_1.R/D.Finger_0_2.R
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.R/D.Arm.R/D.Arm_2.R/D.Forearm.R/D.Forearm_2.R/D.Hand.R/D.Metacarpal_0.R/D.Finger_0_0.R/D.Finger_0_1.R/D.Finger_0_2.R/D.Finger_0_2.R_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.R/D.Arm.R/D.Arm_2.R/D.Forearm.R/D.Forearm_2.R/D.Hand.R/D.Metacarpal_1.R
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.R/D.Arm.R/D.Arm_2.R/D.Forearm.R/D.Forearm_2.R/D.Hand.R/D.Metacarpal_1.R/D.Finger_1_0.R
@@ -230,7 +230,7 @@ AvatarMask:
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.R/D.Arm.R/D.Arm_2.R/D.Forearm.R/D.Forearm_2.R/D.Hand.R/D.Metacarpal_1.R/D.Finger_1_0.R/D.Finger_1_1.R/D.Finger_1_2.R
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.R/D.Arm.R/D.Arm_2.R/D.Forearm.R/D.Forearm_2.R/D.Hand.R/D.Metacarpal_1.R/D.Finger_1_0.R/D.Finger_1_1.R/D.Finger_1_2.R/D.Finger_1_2.R_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.R/D.Arm.R/D.Arm_2.R/D.Forearm.R/D.Forearm_2.R/D.Hand.R/D.Metacarpal_2.R
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.R/D.Arm.R/D.Arm_2.R/D.Forearm.R/D.Forearm_2.R/D.Hand.R/D.Metacarpal_2.R/D.Finger_2_0.R
@@ -240,7 +240,7 @@ AvatarMask:
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.R/D.Arm.R/D.Arm_2.R/D.Forearm.R/D.Forearm_2.R/D.Hand.R/D.Metacarpal_2.R/D.Finger_2_0.R/D.Finger_2_1.R/D.Finger_2_2.R
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.R/D.Arm.R/D.Arm_2.R/D.Forearm.R/D.Forearm_2.R/D.Hand.R/D.Metacarpal_2.R/D.Finger_2_0.R/D.Finger_2_1.R/D.Finger_2_2.R/D.Finger_2_2.R_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.R/D.Arm.R/D.Arm_2.R/D.Forearm.R/D.Forearm_2.R/D.Hand.R/D.Metacarpal_3.R
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.R/D.Arm.R/D.Arm_2.R/D.Forearm.R/D.Forearm_2.R/D.Hand.R/D.Metacarpal_3.R/D.Finger_3_0.R
@@ -250,7 +250,7 @@ AvatarMask:
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.R/D.Arm.R/D.Arm_2.R/D.Forearm.R/D.Forearm_2.R/D.Hand.R/D.Metacarpal_3.R/D.Finger_3_0.R/D.Finger_3_1.R/D.Finger_3_2.R
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.R/D.Arm.R/D.Arm_2.R/D.Forearm.R/D.Forearm_2.R/D.Hand.R/D.Metacarpal_3.R/D.Finger_3_0.R/D.Finger_3_1.R/D.Finger_3_2.R/D.Finger_3_2.R_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.R/D.Arm.R/D.Arm_2.R/D.Forearm.R/D.Forearm_2.R/D.Hand.R/D.Thumb_0.R
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.R/D.Arm.R/D.Arm_2.R/D.Forearm.R/D.Forearm_2.R/D.Hand.R/D.Thumb_0.R/D.Thumb_1.R
@@ -258,7 +258,7 @@ AvatarMask:
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.R/D.Arm.R/D.Arm_2.R/D.Forearm.R/D.Forearm_2.R/D.Hand.R/D.Thumb_0.R/D.Thumb_1.R/D.Thumb_2.R
     m_Weight: 1
   - m_Path: SunflowerGunArmature/D.Root/D.Shoulder.R/D.Arm.R/D.Arm_2.R/D.Forearm.R/D.Forearm_2.R/D.Hand.R/D.Thumb_0.R/D.Thumb_1.R/D.Thumb_2.R/D.Thumb_2.R_end
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Trigger.001
     m_Weight: 0
   - m_Path: Under_Body.001

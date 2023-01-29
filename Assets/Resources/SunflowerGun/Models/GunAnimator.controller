@@ -491,7 +491,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: ADS
     m_StateMachine: {fileID: 8711705888619270171}
-    m_Mask: {fileID: 0}
+    m_Mask: {fileID: 31900000, guid: d1492e214c69adc48ba48b916b2dd6d8, type: 2}
     m_Motions:
     - serializedVersion: 2
       m_State: {fileID: -6813157028855419353}
@@ -510,7 +510,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Barrel Rotation
     m_StateMachine: {fileID: -1552905668262283063}
-    m_Mask: {fileID: 31900000, guid: 7ae94738effef7847802415122c724da, type: 2}
+    m_Mask: {fileID: 31900000, guid: d1492e214c69adc48ba48b916b2dd6d8, type: 2}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 1
