@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 148baa89761f85248ac055f21a34998b, type: 3}
+  m_Name: protogun_secondary
+  m_EditorClassIdentifier: 
+  id: protogun_secondary
+  description: charged shot, 3 levels depending on how long you hold
+  icon: {fileID: 0}
+  pivot: {fileID: 0}
+  firingType: 2
+  actionCooldown: 1
+  maxHoldDuration: 4
+  minHoldDuration: 0
+  energyType: 0
+  energyRegenType: 0
+  energyRegenCooldown: 0
+  energyRegenRate: 0
+  energyMax: 0
+  energyCost: 0
+  shareEnergyWithOtherForm: 0
+  autoReloadOnEmpty: 0
+  autoFireOnMaxHold: 0
+  screenShakeImpulseMagnitude: 5
+  screenShakeImpulseDirection: {x: 0, y: 0, z: 0}
+  audioClip: {fileID: 8300000, guid: fb2a150c9db670a48b9b9d8b128e03d2, type: 3}
+  volume: 2.5
+  _bullet1: {fileID: 3648734522970492190, guid: d7552fe489bc948439315ea051034b7a,
+    type: 3}
+  _bullet2: {fileID: 3648734522970492190, guid: cc78bd6867be5a7459e96044a81b43df,
+    type: 3}
+  _bullet3: {fileID: 3648734522970492190, guid: 519f1ea263c8a3c4abea935c56b3b256,
+    type: 3}
+  raycastCheckLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  chargeTime: 0
+  chargeThreshold1: 0.7
+  chargeThreshold2: 1.5
+  chargeThreshold3: 2
+  charge: 1.8202429

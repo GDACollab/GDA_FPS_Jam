@@ -1,0 +1,6 @@
+{
+  "id": "Himawari",
+  "weaponPrefabPath": "SunflowerGun/WeaponPrefab/SunflowerGun",
+  "meshPath": "SunflowerGun/WeaponPrefab/SunflowerGun_Model",
+  "displayName": "Himawari"
+}

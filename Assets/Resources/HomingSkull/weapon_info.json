@@ -1,0 +1,6 @@
+{
+  "id": "homingSkull",
+  "weaponPrefabPath": "HomingSkull/WeaponPrefab/DarkForceGun",
+  "meshPath": "HomingSkull/Models/display_darkSkull",
+  "displayName": "Homing Skull"
+}

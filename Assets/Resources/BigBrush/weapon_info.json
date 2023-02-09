@@ -1,0 +1,7 @@
+{
+  "id": "bigBrush",
+  "weaponPrefabPath": "BigBrush/WeaponPrefab/BigPaintBrush",
+  "meshPath": "BigBrush/Models/BrushMesh",
+  "displayName": "Big Paint Brush",
+  "description": "Click to flick your brush and fling a volley of 3 blobs of paint"
+}

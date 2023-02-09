@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 214eb51eab900304085a0be732f6e322, type: 3}
+  m_Name: protogun_primary
+  m_EditorClassIdentifier: 
+  id: protogun_primary
+  description: shoots stuff
+  icon: {fileID: 0}
+  pivot: {fileID: 0}
+  firingType: 0
+  actionCooldown: 0.1
+  maxHoldDuration: 5
+  minHoldDuration: 0
+  energyType: 1
+  energyRegenType: 3
+  energyRegenCooldown: 1
+  energyRegenRate: 5
+  energyMax: 50
+  energyCost: 1
+  shareEnergyWithOtherForm: 0
+  autoReloadOnEmpty: 0
+  autoFireOnMaxHold: 0
+  screenShakeImpulseMagnitude: 0.01
+  screenShakeImpulseDirection: {x: 0, y: 0, z: 0}
+  audioClip: {fileID: 8300000, guid: 14f14c2bc2d458848a12e284c9f7c112, type: 3}
+  volume: 0.1
+  _bullet: {fileID: 3648734522970492190, guid: 750aea3be5d26d74cb3ee04aff124350, type: 3}
+  raycastCheckLayers:
+    serializedVersion: 2
+    m_Bits: 512

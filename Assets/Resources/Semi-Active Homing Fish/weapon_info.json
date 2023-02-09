@@ -1,0 +1,6 @@
+{
+  "id": "SemiActiveHomingFish",
+  "weaponPrefabPath": "Semi-Active Homing Fish/WeaponPrefab/SemiActiveHomingFishGun",
+  "meshPath": "Semi-Active Homing Fish/Models/HomingLauncher",
+  "displayName": "Fish Launcher 2.0"
+}

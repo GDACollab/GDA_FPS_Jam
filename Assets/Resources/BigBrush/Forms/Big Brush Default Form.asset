@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd666b545df194484b113f63f4533003, type: 3}
+  m_Name: Big Brush Default Form
+  m_EditorClassIdentifier: 
+  id: bigBrush_default
+  description: Fires 3 shots every time the main fire button is pressed. Shots fall
+    after a little while.
+  icon: {fileID: 0}
+  pivot: {fileID: 0}
+  firingType: 1
+  actionCooldown: 0.55
+  maxHoldDuration: 0
+  energyType: 0
+  energyRegenType: 0
+  energyRegenCooldown: 0
+  energyRegenRate: 0
+  energyMax: 0
+  energyCost: 0
+  shareEnergyWithOtherForm: 0
+  autoReloadOnEmpty: 0
+  screenShakeImpulseMagnitude: 0
+  screenShakeImpulseDirection: {x: 0, y: 0, z: 0}
+  audioClip: {fileID: 0}
+  volume: 1
+  _bullet: {fileID: 3648734522970492190, guid: a221dad39862f4a5d85ec095f375cdac, type: 3}
+  raycastCheckLayers:
+    serializedVersion: 2
+    m_Bits: 129
+  leftBulletOffset: -30
+  rightBulletOffset: 30

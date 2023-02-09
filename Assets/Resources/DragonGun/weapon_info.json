@@ -1,0 +1,6 @@
+{
+  "id": "basic",
+  "weaponPrefabPath": "DragonGun/WeaponPrefab/DragonGun",
+  "meshPath": "DragonGun/Models/EquipModel",
+  "displayName": "Dragon Gun"
+}

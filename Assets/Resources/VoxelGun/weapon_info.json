@@ -1,0 +1,6 @@
+{
+  "id": "voxelGun",
+  "weaponPrefabPath": "VoxelGun/WeaponPrefab/VoxelGun",
+  "meshPath": "VoxelGun/Models/DesertEagleFPSJAM",
+  "displayName": "Voxel Gun"
+}
