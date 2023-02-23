@@ -37,6 +37,7 @@ public class WeaponHoverTextMananger : MonoBehaviour
 
                     WeaponInfo weaponInfo = info.collider.gameObject.GetComponent<PickupWeapon>().currentWeaponInfo;
                     weaponNameText.text = weaponInfo.displayName;
+                    weaponDescriptionText.text = weaponInfo.description;
                 }
                 else
                 {

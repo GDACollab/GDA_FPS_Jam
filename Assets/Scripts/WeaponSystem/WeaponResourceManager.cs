@@ -14,15 +14,15 @@ public class WeaponInfo
     public string weaponPrefabPath;
     public string meshPath;
     public string displayName;
+    public string description;
 
-
-    public WeaponInfo(string _id, string _weaponPrefabPath, string _meshPath, string _displayName)
+    public WeaponInfo(string _id, string _weaponPrefabPath, string _meshPath, string _displayName, string _description)
     {
         this.id = _id;
         this.weaponPrefabPath = _weaponPrefabPath;
         this.meshPath = _meshPath;
         this.displayName = _displayName;
-
+        this.description = _description;
     }
 }
 
