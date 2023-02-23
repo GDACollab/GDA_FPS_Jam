@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6876281269508243020}
   m_Layer: 10
   m_Name: InteractableWeaponSwap
-  m_TagString: Untagged
+  m_TagString: WeaponHoverStand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,6 +54,12 @@ MonoBehaviour:
   playerController: {fileID: 0}
   weaponPrefab: {fileID: 0}
   meshParent: {fileID: 1238763949842717480}
+  weaponName: 
+  currentWeaponInfo:
+    id: 
+    weaponPrefabPath: 
+    meshPath: 
+    displayName: 
 --- !u!33 &6876281269508243011
 MeshFilter:
   m_ObjectHideFlags: 0

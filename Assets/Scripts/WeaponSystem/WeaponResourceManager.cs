@@ -83,6 +83,8 @@ public class WeaponResourceManager : UnitySingleton<WeaponResourceManager>
             GameObject newSwapper = Instantiate(interactableWeaponSwapPrefab, transform);
             newSwapper.transform.localPosition = newSpawnPoint;
             angleOfSpawn += angleRateOfChange;
+
+            newSwapper.GetComponent<PickupWeapon>().currentWeaponInfo = w;
             newSwapper.GetComponent<PickupWeapon>().weaponPrefab = (Resources.Load(w.weaponPrefabPath, typeof(GameObject)) as GameObject);
             newSwapper.GetComponent<PickupWeapon>().SetMesh((Resources.Load(w.meshPath, typeof(GameObject)) as GameObject));
         }

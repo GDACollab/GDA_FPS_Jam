@@ -8,6 +8,8 @@ public class PickupWeapon : Interactable
     public PlayerController playerController;
     public GameObject weaponPrefab;
     public Transform meshParent;
+    public string weaponName;
+    public WeaponInfo currentWeaponInfo;
 
     public override void Start()
     {
