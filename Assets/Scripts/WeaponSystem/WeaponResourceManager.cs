@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using UnityEngine.UI;
 using TMPro;
+using static UnityEditor.PlayerSettings;
 
 [System.Serializable]
 public class WeaponInfo
@@ -32,6 +33,10 @@ public class WeaponResourceManager : UnitySingleton<WeaponResourceManager>
     [SerializeField] private GameObject interactableWeaponSwapPrefab;
     private Vector3 latestWeaponSwapPosition = Vector3.zero;
     [SerializeField] private Vector3 offset = Vector3.zero;
+
+    [SerializeField] private float radius = 3f;
+    [SerializeField] private float angleRateOfChange = 3f;
+    private float angleOfSpawn = 0f;
 
     public override void Awake()
     {
@@ -69,9 +74,15 @@ public class WeaponResourceManager : UnitySingleton<WeaponResourceManager>
     {
         foreach(WeaponInfo w in allFoundWeaponsInfo)
         {
+            Vector3 newSpawnPoint = Vector3.zero;
+
+            newSpawnPoint.x = (radius * Mathf.Cos(angleOfSpawn / (180f / Mathf.PI)));
+            newSpawnPoint.y = transform.position.y;
+            newSpawnPoint.z = (radius * Mathf.Sin(angleOfSpawn / (180f / Mathf.PI)));
+
             GameObject newSwapper = Instantiate(interactableWeaponSwapPrefab, transform);
-            newSwapper.transform.localPosition = latestWeaponSwapPosition;
-            latestWeaponSwapPosition = newSwapper.transform.localPosition + offset;
+            newSwapper.transform.localPosition = newSpawnPoint;
+            angleOfSpawn += angleRateOfChange;
             newSwapper.GetComponent<PickupWeapon>().weaponPrefab = (Resources.Load(w.weaponPrefabPath, typeof(GameObject)) as GameObject);
             newSwapper.GetComponent<PickupWeapon>().SetMesh((Resources.Load(w.meshPath, typeof(GameObject)) as GameObject));
         }
@@ -88,5 +99,11 @@ public class WeaponResourceManager : UnitySingleton<WeaponResourceManager>
         }
 
         return null;
+    }
+
+    private void OnDrawGizmos()
+    {
+        UnityEditor.Handles.color = Color.green;
+        UnityEditor.Handles.DrawWireDisc(transform.position, transform.up, radius);
     }
 }
