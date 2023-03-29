@@ -2,5 +2,7 @@
   "id": "basic",
   "weaponPrefabPath": "ExampleHybridGun/WeaponPrefab/TestGun",
   "meshPath": "ExampleHybridGun/Models/testGunModel",
-  "displayName": "Test Hybrid Gun"
+  "displayName": "Template Gun",
+  "description": "The very first.",
+  "credits": "Programming Department"
 }
