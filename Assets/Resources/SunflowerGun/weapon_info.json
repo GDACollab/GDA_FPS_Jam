@@ -2,5 +2,7 @@
   "id": "Himawari",
   "weaponPrefabPath": "SunflowerGun/WeaponPrefab/SunflowerGun",
   "meshPath": "SunflowerGun/WeaponPrefab/SunflowerGun_Model",
-  "displayName": "Himawari"
+  "displayName": "Sunflower",
+  "description": "The gun fires a precision high-damage bolt after charging for 1s. It comes with a lore panel that shows when holding alternate fire.",
+  "credits": "Annalivia Martin-Straw*(Concept Artist, Textures)**Enrico Widodo*(Sound Designer, Programming)"
 }

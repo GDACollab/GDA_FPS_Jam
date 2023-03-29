@@ -2,6 +2,6 @@
   "id": "protogun",
   "weaponPrefabPath": "protogun/WeaponPrefab/protogun",
   "meshPath": "protogun/Models/prototypegun",
-  "displayName": "i have no idea what im doing"
-  
+  "displayName": "protogun",
+  "description": "Hold secondary to charge, theres 3 levels. It's incredibly basic but cool because I had literally no idea what I was doing 98% of the time."
 }

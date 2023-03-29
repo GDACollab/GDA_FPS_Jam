@@ -791,7 +791,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32960
+  m_Name: pb_Mesh29100
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -2154,9 +2154,168 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 275273441, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_text
+      value: This is the weapon description provided there is one. Apple Sauce Bananas
+        Peanut Butter Soup Rainbow Trout Ice Cream Donuts More Filler TextThis is
+        the weapon description provided there is one. Apple Sauce Bananas Peanut
+        Butter Soup Rainbow Trout Ice Cream Donuts More Filler Text
+      objectReference: {fileID: 0}
+    - target: {fileID: 275273441, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_fontSize
+      value: 30.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 275273441, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_margin.w
+      value: -311.45267
+      objectReference: {fileID: 0}
+    - target: {fileID: 275273441, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 34.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 275273441, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_lineSpacing
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 275273441, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 275273441, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_enableWordWrapping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 275273441, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 294912143, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -19.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 294912144, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_margin.x
+      value: -4.8200073
+      objectReference: {fileID: 0}
+    - target: {fileID: 294912144, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_margin.y
+      value: -27.967148
+      objectReference: {fileID: 0}
+    - target: {fileID: 677896352, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_Color.a
+      value: 0.84705883
+      objectReference: {fileID: 0}
     - target: {fileID: 779769021, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
       propertyPath: m_TagString
       value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 896793853, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -18.09999
+      objectReference: {fileID: 0}
+    - target: {fileID: 896793854, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_text
+      value: 'Cool Person
+
+        (Did things)
+
+
+        Cool Person
+
+        (Did
+        things)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 896793854, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_fontSize
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 896793854, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_margin.w
+      value: -193.30504
+      objectReference: {fileID: 0}
+    - target: {fileID: 896793854, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_margin.x
+      value: -9.930138
+      objectReference: {fileID: 0}
+    - target: {fileID: 896793854, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_margin.y
+      value: 41.115894
+      objectReference: {fileID: 0}
+    - target: {fileID: 896793854, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 896793854, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 41.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 896793854, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_lineSpacing
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 896793854, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_overflowMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 896793854, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_characterSpacing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 896793854, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 896793854, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_paragraphSpacing
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 896793854, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 896793854, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_enableWordWrapping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 896793854, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_wordWrappingRatios
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 896793854, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1692617206, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_text
+      value: 'Weapon '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1692617206, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_fontSize
+      value: 58
+      objectReference: {fileID: 0}
+    - target: {fileID: 1692617206, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_margin.w
+      value: -20.935081
+      objectReference: {fileID: 0}
+    - target: {fileID: 1692617206, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 58
+      objectReference: {fileID: 0}
+    - target: {fileID: 1692617206, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_overflowMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1692617206, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_verticalMapping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1692617206, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1692617206, guid: 369a052995bb66e41965ef19bd68920c, type: 3}
+      propertyPath: m_enableWordWrapping
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5342817933673353782, guid: 369a052995bb66e41965ef19bd68920c,
         type: 3}
@@ -9163,7 +9322,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32990
+  m_Name: pb_Mesh29132
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

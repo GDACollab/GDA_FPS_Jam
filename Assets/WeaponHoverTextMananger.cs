@@ -38,6 +38,13 @@ public class WeaponHoverTextMananger : MonoBehaviour
                     WeaponInfo weaponInfo = info.collider.gameObject.GetComponent<PickupWeapon>().currentWeaponInfo;
                     weaponNameText.text = weaponInfo.displayName;
                     weaponDescriptionText.text = weaponInfo.description;
+                    if (weaponInfo.credits != null) { 
+                        weaponCreatorsText.text = weaponInfo.credits.Replace("*", System.Environment.NewLine);
+                    }
+                    else
+                    {
+                        weaponCreatorsText.text = "Anonymous";
+                    }
                 }
                 else
                 {

@@ -2,5 +2,5 @@
   "id": "homingFish",
   "weaponPrefabPath": "HomingGun/WeaponPrefab/HomingFishGun",
   "meshPath": "HomingGun/Models/testModel",
-  "displayName": "Homing Fish Gun"
+  "displayName": "Fish Homing Launcher"
 }

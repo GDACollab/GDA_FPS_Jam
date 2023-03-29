@@ -2,5 +2,7 @@
   "id": "voxelGun",
   "weaponPrefabPath": "VoxelGun/WeaponPrefab/VoxelGun",
   "meshPath": "VoxelGun/Models/DesertEagleFPSJAM",
-  "displayName": "Voxel Gun"
+  "displayName": "Voxel Viper",
+  "description": "The Voxel Viper is an dangerous and powerful new invention. Enjoy blasting your enemies in retro style.",
+  "credits": "Ivy Dudzik*(3D Modeling/Programming)"
 }

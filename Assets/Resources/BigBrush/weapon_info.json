@@ -2,6 +2,7 @@
   "id": "bigBrush",
   "weaponPrefabPath": "BigBrush/WeaponPrefab/BigPaintBrush",
   "meshPath": "BigBrush/Models/BrushMesh",
-  "displayName": "Big Paint Brush",
-  "description": "Click to flick your brush and fling a volley of 3 blobs of paint"
+  "displayName": "Big Brush",
+  "description": "It’s a big paint brush. It’s meant to resemble the Brush class of weapons from the Splatoon series, however its functionality was limited to what I could figure out how to do. It is able to fire out a volley of 3 large projectiles every swing, with each swing being triggered by pressing the fire button.",
+  "credits": "Jacob Dickerman*(All)"
 }
