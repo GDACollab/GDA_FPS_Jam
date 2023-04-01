@@ -791,7 +791,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh29100
+  m_Name: pb_Mesh29096
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -9332,7 +9332,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh29132
+  m_Name: pb_Mesh29128
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9585,8 +9585,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7397903105758403501, guid: cddafb030722d60449c92df9e3362ac0,
         type: 3}
+      propertyPath: startAngle
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7397903105758403501, guid: cddafb030722d60449c92df9e3362ac0,
+        type: 3}
       propertyPath: angleRateOfChange
-      value: 15
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cddafb030722d60449c92df9e3362ac0, type: 3}

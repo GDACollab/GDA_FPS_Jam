@@ -38,6 +38,7 @@ public class WeaponResourceManager : UnitySingleton<WeaponResourceManager>
 
     [SerializeField] private float radius = 3f;
     [SerializeField] private float angleRateOfChange = 3f;
+    [SerializeField] private float startAngle = 0f;
     private float angleOfSpawn = 0f;
 
     public override void Awake()
@@ -74,7 +75,9 @@ public class WeaponResourceManager : UnitySingleton<WeaponResourceManager>
 
     void SpawnInteractableResourceWeapons()
     {
-        foreach(WeaponInfo w in allFoundWeaponsInfo)
+        angleOfSpawn = startAngle;
+
+        foreach (WeaponInfo w in allFoundWeaponsInfo)
         {
             Vector3 newSpawnPoint = Vector3.zero;
 
