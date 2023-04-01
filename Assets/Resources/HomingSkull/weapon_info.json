@@ -2,5 +2,7 @@
   "id": "homingSkull",
   "weaponPrefabPath": "HomingSkull/WeaponPrefab/DarkForceGun",
   "meshPath": "HomingSkull/Models/display_darkSkull",
-  "displayName": "Homing Skull"
+  "displayName": "Dark Skull",
+  "description": "For when you want to haunt your enemies.",
+  "credits": "Sky Casey"
 }

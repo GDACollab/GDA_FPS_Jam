@@ -1,7 +1,8 @@
 {
-  "id": "bigBrush",
-  "weaponPrefabPath": "BigBrush/WeaponPrefab/BigPaintBrush",
-  "meshPath": "BigBrush/Models/BrushMesh",
-  "displayName": "Big Paint Brush",
-  "description": "Click to flick your brush and fling a volley of 3 blobs of paint"
+  "id": "basic",
+  "weaponPrefabPath": "DragonGun/WeaponPrefab/DragonGun",
+  "meshPath": "DragonGun/Models/EquipModel",
+  "displayName": "Dragon Gun",
+  "description": "Enough said. Burn them to the ground.",
+  "credits": "Arjun Krishnan*(Programmer, Artist, Animator)"
 }

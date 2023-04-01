@@ -2,5 +2,7 @@
   "id": "minegun",
   "weaponPrefabPath": "Minecraft/WeaponPrefab/MineGun",
   "meshPath": "Minecraft/Models/display_minecraft_arm",
-  "displayName": "MineGun"
+  "displayName": "Minecraft Gun",
+  "description": "It’s the minecraft, in a gun!",
+  "credits": "Sky Casey"
 }
