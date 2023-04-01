@@ -1,7 +1,7 @@
 {
   "id": "SemiActiveHomingFish",
   "weaponPrefabPath": "Semi-Active Homing Fish/WeaponPrefab/SemiActiveHomingFishGun",
-  "meshPath": "Semi-Active Homing Fish/Models/HomingLauncher",
+  "meshPath": "Semi-Active Homing Fish/Models/HomingLauncherPickup",
   "displayName": "Fish Homing Launcher",
   "description": "The launched fish can track onto a target if it is within its search cone. You can influence which target the fish tracks by using the secondary function to toggle a laser designator which tries to guide the fish to the target the laser is tracking.",
   "credits": "Jorel Huerto"

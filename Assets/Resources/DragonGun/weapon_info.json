@@ -1,7 +1,7 @@
 {
   "id": "basic",
   "weaponPrefabPath": "DragonGun/WeaponPrefab/DragonGun",
-  "meshPath": "DragonGun/Models/EquipModel",
+  "meshPath": "DragonGun/Models/DRAGONLOWPOLY",
   "displayName": "Dragon Gun",
   "description": "Enough said. Burn them to the ground.",
   "credits": "Arjun Krishnan*(Programmer, Artist, Animator)"

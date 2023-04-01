@@ -2317,6 +2317,16 @@ PrefabInstance:
       propertyPath: m_enableWordWrapping
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 647333971803196959, guid: 369a052995bb66e41965ef19bd68920c,
+        type: 3}
+      propertyPath: m_text
+      value: Weapon Name
+      objectReference: {fileID: 0}
+    - target: {fileID: 647333971803196959, guid: 369a052995bb66e41965ef19bd68920c,
+        type: 3}
+      propertyPath: m_margin.x
+      value: -124.576965
+      objectReference: {fileID: 0}
     - target: {fileID: 5342817933673353782, guid: 369a052995bb66e41965ef19bd68920c,
         type: 3}
       propertyPath: m_RootOrder
