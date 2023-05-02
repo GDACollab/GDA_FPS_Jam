@@ -35,14 +35,22 @@ public class SemiActiveHomingFish_PrimaryProjectile : BaseBullet
 
     private void FixedUpdate()
     {
+        SemiActiveHomingFishWeaponController controller = FormController.Instance.currentForm.GetComponent<SemiActiveHomingFishWeaponController>();
+
         //check if target is lost
-        lockedTarget = FormController.Instance.currentForm.GetComponent<SemiActiveHomingFishWeaponController>().lockedTarget;
+        if (controller == null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        lockedTarget = controller.lockedTarget;
         if (lockedTarget == null)
         {
             return;
         }
         //apply homing force if tracker is active otherwise fish uses own tracking
-        if (FormController.Instance.currentForm.GetComponent<SemiActiveHomingFishWeaponController>().trackerActive)
+        if (controller.trackerActive)
         {
             ApplyHomingForce();
         }else if (targets.Count > 0)
