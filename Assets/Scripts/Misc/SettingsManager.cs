@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.Audio;
 using TMPro;
 using UnityEngine.UI;
+using Unity.VisualScripting;
 
 public class SettingsManager : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class SettingsManager : MonoBehaviour
     public float Sensitivity;
 
     // Trackers
-    bool settingsOpen = false;
+    public bool settingsOpen = false;
     float oldTimeScale;
 
     // Dependenices 
@@ -29,6 +30,17 @@ public class SettingsManager : MonoBehaviour
     TextMeshProUGUI volumeText;
     TextMeshProUGUI fovText;
     TextMeshProUGUI sensitivityText;
+
+    private static bool created = false;
+
+    void Awake()
+    {
+        if (!created)
+        {
+            DontDestroyOnLoad(this.gameObject);
+            created = true;
+        }
+    }
 
     private void Start()
     {
@@ -55,27 +67,7 @@ public class SettingsManager : MonoBehaviour
     {
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            settingsOpen = !settingsOpen;
-
-            if (settingsOpen)
-            {
-                Cursor.lockState = CursorLockMode.None;
-                oldTimeScale = Time.timeScale;
-                Time.timeScale = 0;
-                player.canControlMovement = false;
-                Cursor.visible = true;
-
-                settingsUICanvas.SetActive(true);
-            }
-            else
-            {
-                Cursor.lockState = CursorLockMode.Locked;
-                Time.timeScale = oldTimeScale;
-                player.canControlMovement = true;
-                Cursor.visible = false;
-
-                settingsUICanvas.SetActive(false);
-            }
+            toggleUI();
         }
     }
 
@@ -90,14 +82,51 @@ public class SettingsManager : MonoBehaviour
     {
         this.FOV = FOV;
         fovText.text = FOV.ToString("0");
-        PlayerController.Instance.UpdateBaseFOV(this.FOV);
+        if (PlayerController.Instance != null)
+        {
+            PlayerController.Instance.UpdateBaseFOV(this.FOV);
+        }
     }
 
     public void SetSensitivity(float sensitivity)
     {
         this.Sensitivity = sensitivity;
         sensitivityText.text = sensitivity.ToString("0");
-        PlayerController.Instance.SetSensitivity((this.Sensitivity/5)*2);
+        if (PlayerController.Instance != null)
+        {
+            PlayerController.Instance.SetSensitivity((this.Sensitivity / 5) * 2);
+        }
 
+    }
+
+    public void toggleUI()
+    {
+        settingsOpen = !settingsOpen;
+
+        if (settingsOpen)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            oldTimeScale = Time.timeScale;
+            Time.timeScale = 0;
+            if (player != null)
+            {
+                player.canControlMovement = false;
+            }
+            Cursor.visible = true;
+
+            settingsUICanvas.SetActive(true);
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Time.timeScale = oldTimeScale;
+            if (player != null)
+            {
+                player.canControlMovement = false;
+            }
+            Cursor.visible = false;
+
+            settingsUICanvas.SetActive(false);
+        }
     }
 }
