@@ -2,5 +2,7 @@
   "id": "homingFish",
   "weaponPrefabPath": "HomingGun/WeaponPrefab/HomingFishGun",
   "meshPath": "HomingGun/Models/testModel",
-  "displayName": "Fish Homing Launcher"
+  "displayName": "Fish Homing Launcher",
+  "description": "Shoot a heat-seeking fish that targets enemies!",
+  "credits": "Calex Raffield*(Everything)"
 }

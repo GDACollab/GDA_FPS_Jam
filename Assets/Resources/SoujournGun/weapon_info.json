@@ -2,5 +2,7 @@
   "id": "chargeRailgun",
   "weaponPrefabPath": "SoujournGun/WeaponPrefab/ChargeRailgun",
   "meshPath": "SoujournGun/Models/RailgunMesh",
-  "displayName": "Charge Railgun"
+  "displayName": "Charge Railgun",
+  "description": "Build charge then fire a railgun shot! More charge = more damage!",
+  "credits": "Calex Raffield*(Everything)"
 }
