@@ -34,6 +34,8 @@ public class SettingsManager : MonoBehaviour
 
     private static bool created = false;
 
+    public bool foundPlayer = false;
+
     void Awake()
     {
         if (!created)
@@ -59,10 +61,13 @@ public class SettingsManager : MonoBehaviour
             // Update old values
             PlayerController.Instance.UpdateBaseFOV(this.FOV);
             PlayerController.Instance.SetSensitivity((this.Sensitivity / 5) * 2);
+
+            foundPlayer = true;
         }
         else
         {
             player = null;
+            foundPlayer = false;
         }
     }
 
@@ -132,7 +137,7 @@ public class SettingsManager : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             oldTimeScale = Time.timeScale;
             Time.timeScale = 0;
-            if (player != null)
+            if (foundPlayer)
             {
                 player.canControlMovement = false;
             }
@@ -142,15 +147,14 @@ public class SettingsManager : MonoBehaviour
         }
         else
         {
-            if (player != null)
+
+            Time.timeScale = oldTimeScale;
+
+            if (foundPlayer)
             {
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
-            }
-            Time.timeScale = oldTimeScale;
-            if (player != null)
-            {
-                player.canControlMovement = false;
+                player.canControlMovement = true;
             }
 
             settingsUICanvas.SetActive(false);
