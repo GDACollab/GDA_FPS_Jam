@@ -7,6 +7,7 @@ using UnityEngine.Audio;
 using TMPro;
 using UnityEngine.UI;
 using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
 
 public class SettingsManager : MonoBehaviour
 {
@@ -39,6 +40,29 @@ public class SettingsManager : MonoBehaviour
         {
             DontDestroyOnLoad(this.gameObject);
             created = true;
+        }
+        
+        // Run CheckForPlayer every scene, to check if we can pair to the player and alter their FOV and sense
+        SceneManager.sceneLoaded += CheckForPlayer;
+    }
+
+    void CheckForPlayer(Scene scene, LoadSceneMode mode)
+    {
+        //Debug.Log("Loaded");
+
+        GameObject[] playerObj = GameObject.FindGameObjectsWithTag("Player");
+
+        if (playerObj != null && playerObj.Length == 1)
+        {
+            player = playerObj[0].GetComponent<PlayerController>();
+
+            // Update old values
+            PlayerController.Instance.UpdateBaseFOV(this.FOV);
+            PlayerController.Instance.SetSensitivity((this.Sensitivity / 5) * 2);
+        }
+        else
+        {
+            player = null;
         }
     }
 
@@ -118,13 +142,16 @@ public class SettingsManager : MonoBehaviour
         }
         else
         {
-            Cursor.lockState = CursorLockMode.Locked;
+            if (player != null)
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+            }
             Time.timeScale = oldTimeScale;
             if (player != null)
             {
                 player.canControlMovement = false;
             }
-            Cursor.visible = false;
 
             settingsUICanvas.SetActive(false);
         }
