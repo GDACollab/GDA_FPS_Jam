@@ -5,7 +5,6 @@ using System.IO;
 using System.Linq;
 using UnityEngine.UI;
 using TMPro;
-using static UnityEditor.PlayerSettings;
 
 [System.Serializable]
 public class WeaponInfo
@@ -107,10 +106,11 @@ public class WeaponResourceManager : UnitySingleton<WeaponResourceManager>
 
         return null;
     }
-
+    #if (UNITY_EDITOR)
     private void OnDrawGizmos()
     {
         UnityEditor.Handles.color = Color.green;
         UnityEditor.Handles.DrawWireDisc(transform.position, transform.up, radius);
     }
+    #endif
 }
